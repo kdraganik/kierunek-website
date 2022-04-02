@@ -26,16 +26,16 @@ export default function About() {
           <div className={styles.text}>
             <div className={styles.title}>pastorzy</div>
             <div className={styles.name}>
-              Bartek Tomczyński
+              Bartek i Danusia Tomczyńscy
             </div>
             <div className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam posuere quam eget sodales. Aenean viverra felis sit amet velit finibus, nec dapibus ligula vestibulum. Sed pellentesque elit turpis, quis laoreet nisl mattis eget. Vivamus nunc nulla, ullamcorper non justo vel, vehicula gravida nisi. Curabitur dolor diam, feugiat eu erat sit amet, accumsan accumsan erat. Aliquam sed tortor eu est commodo efficitur. Duis suscipit at nisi quis facilisis.
-            </div>
-            <div className={styles.name}>
-              Danusia Tomczyńska
+              To szczęśliwi rodzice czwórki dzieci, pełni pasji dla Boga i ludzi. Oprócz prowadzenia kościoła zajmują się również innymi działaniami. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet, a także jest mówczynią konferencyjną.
             </div>
             <div className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam posuere quam eget sodales. Aenean viverra felis sit amet velit finibus, nec dapibus ligula vestibulum. Sed pellentesque elit turpis, quis laoreet nisl mattis eget. Vivamus nunc nulla, ullamcorper non justo vel, vehicula gravida nisi. Curabitur dolor diam, feugiat eu erat sit amet, accumsan accumsan erat. Aliquam sed tortor eu est commodo efficitur. Duis suscipit at nisi quis facilisis.
+              Kościół jest dla nas miejscem, w którym zwykli ludzie spotykają niezwykłego Boga. Mieszkając we Wrocławiu poznaliśmy wielu młodych ludzi, którzy szukali żywej relacji z Bogiem i pragnęli być częścią kościoła, który byłby otwarty i współczesny w swojej formie.
+            </div>
+            <div className={styles.description}>
+              Kierunek powstał w odpowiedzi na te właśnie potrzeby i marzenia o kościele współczesnym, w którym relacje są ważniejsze niż forma, gdzie każdy czuje się jak w domu i może spotkać się z autentycznym, zmieniającym życie Bogiem. Jesteśmy dumni i szczęśliwi, widząc, jak ludzie realizują swoje pasje i odnajdują powołanie w naszym kościele. Odwiedź nas i zainspiruj się!
             </div>
           </div>
         </div>

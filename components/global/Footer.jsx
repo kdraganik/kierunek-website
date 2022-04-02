@@ -5,14 +5,22 @@ import styles from '../../styles/Footer.module.scss'
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Link className={styles.logoBox} href="/" passHref><Image className={styles.logo} src="/logo_white.svg" alt="logo"/></Link>
+      <Link href="/" passHref>
+        <div className={styles.logoBox}>
+          <Image layout='fill' className={styles.logo} src="/logo_white.svg" alt="logo"/>
+        </div>
+      </Link>
       <div className={styles.rightBox}>
         <div className={styles.icons}>
           <Link href="https://www.instagram.com/kosciolkierunek" passHref>
-            <Image className={styles.icon} src="/ig-icon.svg" alt="ig-icon" />
+            <div className={styles.iconBox}>
+              <Image layout="fill" className={styles.icon} src="/ig-icon.svg" alt="ig-icon" />
+            </div>
           </Link>
           <Link href="https://www.facebook.com/kosciolkierunek" passHref>
-            <Image className={styles.icon} src="/fb-icon.svg" alt="fb-icon" />
+            <div className={styles.iconBox}>
+              <Image layout="fill" className={styles.icon} src="/fb-icon.svg" alt="fb-icon" />
+            </div>
           </Link>
         </div>
         <ul className={styles.links}>

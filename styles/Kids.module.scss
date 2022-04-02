@@ -17,7 +17,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
+  .imageBox{
+    position: relative;
     width: 40%;
     height: auto;
   }

@@ -11,27 +11,28 @@
   z-index: 1;
 }
 
-.logo{
-  width: 100px;
-  height: auto;
-}
-
 .logoBox{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  height: auto;
 }
 
 .rightBox{
   display: flex;
   flex-direction: column;
 }
+
 .icons{
   display: flex;
   justify-content: flex-end;
   margin-bottom: 8px;
 }
-.icon{
+
+.iconBox{
+  position: relative;
   width: 28px;
   height: 28px;
   margin-left: 8px;

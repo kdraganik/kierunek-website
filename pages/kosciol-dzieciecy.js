@@ -7,7 +7,13 @@ export default function Kids() {
     <Layout>
       <div className={styles.wrapper}>
         <div className={styles.banner}>
-          <Image src="/logo_kids.svg" alt="logo_kids"/>
+          <div className={styles.imageBox}>
+            <Image 
+              height={500}
+              width={500}
+              objectFit="contain"
+              src="/logo_kids.svg" alt="logo_kids"/>
+          </div>
         </div>
         <div className={styles.info}>
           <h2 className={styles.header}>Wizja i cel kościoła dziecięcego</h2>

@@ -5,9 +5,11 @@ export default function Button({text, link}) {
   return (
     link ? 
     <Link href={link} passHref>
-      <div className={styles.wrapper}>
-        {text}
-      </div>
+      <a>
+        <div className={styles.wrapper}>
+          {text}
+        </div>
+      </a>
     </Link>
     :
     <div className={styles.wrapper}>

@@ -5,7 +5,11 @@ import styles from '../../styles/Navbar.module.scss'
 export default function Navbar() {
   return (
     <navbar className={styles.navbar}>
-      <Link href="/" passHref><Image className={styles.logo} src="/logo_black.svg" alt="logo"/></Link>
+      <Link href="/" passHref>
+        <div className={styles.logoBox}>
+          <Image layout='fill' src="/logo_black.svg" alt="logo"/>
+        </div>
+      </Link>
       <ul className={styles.links}>
         <li><Link href="/poznaj-nas">poznaj nas</Link></li>
         <li><Link href="/kosciol-w-tyg">kosciół w tygodniu</Link></li>

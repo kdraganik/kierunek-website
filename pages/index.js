@@ -84,14 +84,34 @@ export default function Home() {
               />
             </div>
             <div className={styles.links}>
-              <Link href="https://www.facebook.com/kosciolkierunek" passHref><Image src="/fb-icon.svg" alt="fb" /></Link>
-              <Link href="https://www.instagram.com/kosciolkierunek" passHref><Image src="/ig-icon.svg" alt="ig" /></Link>
+              <Link href="https://www.facebook.com/kosciolkierunek" passHref>
+                <div className={styles.imageBox}>
+                  <Image layout="fill" src="/fb-icon.svg" alt="fb" />
+                </div>
+              </Link>
+              <Link href="https://www.instagram.com/kosciolkierunek" passHref>
+                <div className={styles.imageBox}>
+                  <Image layout="fill" src="/ig-icon.svg" alt="ig" />
+                </div>
+              </Link>
             </div>
           </div>
           <div className={styles.bottom}>
-            <Image src="/rect.png" alt="insta1"/>
-            <Image src="/rect.png" alt="insta2"/>
-            <Image src="/rect.png" alt="insta3"/>
+            <div className={styles.imageBox}>
+              <Image 
+                width={1000}
+                height={1000}
+                objectFit='cover'
+                src="/rect.png" 
+                alt="insta1"
+              />
+            </div>
+            <div className={styles.imageBox}>
+              <Image layout="fill" src="/rect.png" alt="insta2"/>
+            </div>
+            <div className={styles.imageBox}>
+              <Image layout="fill" src="/rect.png" alt="insta3"/>
+            </div>
           </div>
         </div>
         <div className={`${styles.section} ${styles.contact}`}>
@@ -122,7 +142,15 @@ export default function Home() {
               <h1>Kochamy Ludzi</h1>
               <h1>Kochamy Życie</h1>
             </div>
-            <Image className={styles.logo} src="/logo_white.svg" alt="logo"/>
+            <div className={styles.imageBox}>
+              <Image
+                width={500}
+                height={500}
+                objectFit='contain'
+                className={styles.logo} 
+                src="/logo_white.svg" alt="logo"
+              />
+            </div>
           </div>
         </div>
       </div>

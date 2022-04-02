@@ -22,6 +22,26 @@ export default function About() {
             />
           </div>
         </div>
+        <div className={styles.pastors}>
+          <div className={styles.text}>
+            <div className={styles.title}>pastorzy</div>
+            <div className={styles.name}>
+              Bartek Tomczyński
+            </div>
+            <div className={styles.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam posuere quam eget sodales. Aenean viverra felis sit amet velit finibus, nec dapibus ligula vestibulum. Sed pellentesque elit turpis, quis laoreet nisl mattis eget. Vivamus nunc nulla, ullamcorper non justo vel, vehicula gravida nisi. Curabitur dolor diam, feugiat eu erat sit amet, accumsan accumsan erat. Aliquam sed tortor eu est commodo efficitur. Duis suscipit at nisi quis facilisis.
+            </div>
+            <div className={styles.name}>
+              Danusia Tomczyńska
+            </div>
+            <div className={styles.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam posuere quam eget sodales. Aenean viverra felis sit amet velit finibus, nec dapibus ligula vestibulum. Sed pellentesque elit turpis, quis laoreet nisl mattis eget. Vivamus nunc nulla, ullamcorper non justo vel, vehicula gravida nisi. Curabitur dolor diam, feugiat eu erat sit amet, accumsan accumsan erat. Aliquam sed tortor eu est commodo efficitur. Duis suscipit at nisi quis facilisis.
+            </div>
+          </div>
+        </div>
+        <div className={styles.services}>
+          
+        </div>
       </div>
     </Layout>
   )

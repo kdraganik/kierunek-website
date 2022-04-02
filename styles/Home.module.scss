@@ -64,6 +64,8 @@
 /* 2.2 Credo */
 .credo{
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 36px;
   font-weight: 900;
   text-transform: uppercase;
@@ -124,7 +126,8 @@
       flex-direction: column;
       margin-left: 25px;
       margin-top: 25px;
-      a img{
+      .imageBox{
+        position: relative;
         width: 36px;
         height: 36px;
       }
@@ -134,7 +137,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    img{
+    .imageBox{
+      position: relative;
       width: 30%;
     }
   }
@@ -163,6 +167,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .name{
@@ -211,11 +216,17 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 150px;
+    padding: 100px;
     background-color: rgba($color: $dark_color, $alpha: 0.4);
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    .imageBox{
+      align-self: flex-end;
+      position: relative;
+      width: 150px;
+      margin-right: 10%;
+    }
   }
   .text{
     align-self: flex-start;
@@ -229,11 +240,5 @@
       margin-right: 12px;
       margin-top: 12px;
     }
-  }
-  .logo{
-    align-self: flex-end;
-    margin-right: 10%;
-    width: 150px;
-    height: auto;
   }
 }

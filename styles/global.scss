@@ -1,0 +1,20 @@
+@import './variables.scss';
+@import url("https://use.typekit.net/eic3fhp.css");
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: $main-font;
+  font-size: 12px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+input{
+  border: none;
+}

@@ -1,0 +1,239 @@
+@import './variables.scss';
+
+/* 1 Main */
+.wrapper{
+  width: 100%;
+  padding: 0 10%;
+  min-height: 100vh;
+  background-color: $light-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 2 Section */
+.section{
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 75px 0;
+}
+
+.contentBox{
+  width: 50%;
+}
+
+/* 2.1 Banner */
+.startBanner{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  .center{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+      font-size: inherit;
+      margin-right: 12px;
+    }
+  }
+  .sideLeftBottom{
+    font-size: 18px;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    max-width: 120px;
+  }
+  .sideRightBottom{
+    font-size: 18px;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    text-align: right;
+    max-width: 220px;
+  }
+}
+
+/* 2.2 Credo */
+.credo{
+  flex-direction: column;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  p{
+    margin-bottom: 36px;
+  }
+  span{
+    color: $light-color;
+    -webkit-text-stroke: 1px $dark-color;
+    font-family: $main-font;
+  }
+
+}
+
+/* 2.3 Week */
+.week{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 2.4 Kids */
+.kids{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 2.5 Prayer */
+.prayer{
+  width: 100vw;
+  margin: 0;
+  padding: 75px 10%;
+  color: $dark_color;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 2.6 Support */
+.support{
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 2.7 Social */
+.social{
+  width: 100vw;
+  margin: 0;
+  padding: 75px 10%;
+  background-color: $dark_color;
+  color: $light_color;
+  flex-direction: column;
+  .top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .links{
+      display: flex;
+      flex-direction: column;
+      margin-left: 25px;
+      margin-top: 25px;
+      a img{
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    img{
+      width: 30%;
+    }
+  }
+}
+
+/* 2.8 Contact */
+.contact{
+  display: flex;
+  flex-direction: column;
+
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .bottom{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoBox{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .name{
+    text-transform: uppercase;
+    color: $main1;
+  }
+  
+  .header{
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  .dateAndPlace{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    span{
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 2px 5px;
+      color: #fff;
+      display: inline-block;
+      margin-top: 10px;
+      background-color: $dark-color;
+    }
+    span:last-child{
+      padding-right: 150px;
+    }
+  }  
+}
+
+/* 2.9 End banner */
+.endBanner{
+  background-image: url('../public/bannerBG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  .overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 150px;
+    background-color: rgba($color: $dark_color, $alpha: 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .text{
+    align-self: flex-start;
+    margin-left: 10%;
+    color: $light-color;
+    font-size: 72px;
+    font-weight: 900;
+    text-align: left;
+    h1{
+      font-size: inherit;
+      margin-right: 12px;
+      margin-top: 12px;
+    }
+  }
+  .logo{
+    align-self: flex-end;
+    margin-right: 10%;
+    width: 150px;
+    height: auto;
+  }
+}

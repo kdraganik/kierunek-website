@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.wrapper{
+  padding: 0;
+}
+
+.name{
+  text-transform: uppercase;
+  color: $main1;
+}
+
+.header{
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.content{
+  font-size: 18px;
+}

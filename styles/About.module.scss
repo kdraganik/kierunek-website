@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-color: $light-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.credo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  p{
+    margin-bottom: 36px;
+  }
+  span{
+    color: $light-color;
+    -webkit-text-stroke: 1px $dark-color;
+    font-family: $main-font;
+  }
+  .animation{
+    font-size: inherit;
+    display: flex;
+    h2{
+      display: inline-block;
+      font-size: inherit;
+      margin-right: 12px;
+    }
+  }
+}
+.pastors{
+  display: flex;
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    .name{
+      font-size: 24px;
+    }
+    .description{
+      font-size: 14px;
+    }
+  }
+}
+.serivces{
+  display: flex;
+}

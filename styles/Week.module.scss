@@ -16,6 +16,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .sliderBox{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 }
 .groups{
   width: 100%;
@@ -24,4 +27,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+}
+.formBox{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0;
+  padding: 0 10%;
 }

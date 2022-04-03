@@ -114,7 +114,6 @@ export default function Home() {
             <Map/>
           </div>
           <div className={styles.bottom}>
-            <div className={styles.header}>Napisz do nas</div>
             <Form />
           </div>
         </div>

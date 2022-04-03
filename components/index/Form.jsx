@@ -16,6 +16,7 @@ export default function Form() {
 
   return(
     <form className={styles.form} onSubmit={handleSubmit}>
+      <div className={styles.header}>Napisz do nas</div>
       <label htmlFor="imie" className={styles.label}>Imię</label>
       <input required type="text" className={styles.textInput} id="imie" value={name} onChange={e => setName(e.target.value)}/>
       <label htmlFor="email" className={styles.label}>Email</label>

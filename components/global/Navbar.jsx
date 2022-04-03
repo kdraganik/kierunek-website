@@ -1,16 +1,40 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import styles from '../../styles/Navbar.module.scss'
 
-export default function Navbar() {
+export default function Navbar({ light }) {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+
+
   return (
     <navbar className={`${styles.navbar}`}>
+
       <Link href="/" passHref>
         <div className={styles.logoBox}>
-          <Image layout='fill' src="/logo_black.svg" alt="logo"/>
+        <Image 
+          height={200} 
+          width={200} 
+          objectFit="contain" 
+          src={ light ? "/logo_white.svg" : "/logo_black.svg" } 
+          alt="logo"
+        />
         </div>
       </Link>
-      <ul className={styles.links}>
+      <ul className={`${styles.links} ${light ? styles.light : ""} ${menuOpen ? "" : styles.hidden}`} onClick={()=>setMenuOpen(false)}>
+        <div className={styles.close} />
+        <Link href="/" passHref>
+          <div className={styles.innerLogoBox}>
+            <Image 
+              height={200} 
+              width={200} 
+              objectFit="contain" 
+              src={ light ? "/logo_white.svg" : "/logo_black.svg" } 
+              alt="logo"
+            />
+          </div>
+        </Link>
         <li><Link href="/poznaj-nas">poznaj nas</Link></li>
         <li><Link href="/kosciol-w-tyg">kosciół w tygodniu</Link></li>
         <li><Link href="/kosciol-dzieciecy">kosciół dziecięcy</Link></li>
@@ -18,6 +42,7 @@ export default function Navbar() {
         <li><Link href="https://wspieram.kosciolkierunek.pl/">wsparcie</Link></li>
         <li><Link href="/#kontakt">kontakt</Link></li>
       </ul>
+      <div className={`${styles.hamMenu} ${light ? styles.light : ""}`} onClick={()=>setMenuOpen(true)}/>
     </navbar>
   )
 }

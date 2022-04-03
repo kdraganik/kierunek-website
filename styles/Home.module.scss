@@ -20,11 +20,15 @@
   width: 100%;
   margin: 75px 0;
 }
-
 .contentBox{
-  width: 50%;
+  margin: 12px;
 }
 
+@media (min-width: 1024px){
+  .contentBox{
+    width: 50%;
+  }
+}
 /* 2.1 Banner */
 .startBanner{
   width: 100%;
@@ -99,8 +103,15 @@
   margin: 0;
   padding: 75px 10%;
   color: $dark_color;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 1024px){
+  .prayer{
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /* 2.6 Support */
@@ -151,6 +162,7 @@
 
   .top{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -163,10 +175,8 @@
   }
 
   .infoBox{
-    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -201,6 +211,18 @@
   }  
 }
 
+@media (min-width: 1024px){
+  .contact{
+    .top{
+      flex-direction: row;
+    }
+  }
+  .infoBox{
+    height: 450px;
+    justify-content: space-between;
+  }
+}
+
 /* 2.9 End banner */
 .endBanner{
   background-image: url('../public/bannerBG.jpg');
@@ -232,13 +254,29 @@
     align-self: flex-start;
     margin-left: 10%;
     color: $light-color;
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 900;
     text-align: left;
     h1{
       font-size: inherit;
       margin-right: 12px;
       margin-top: 12px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .endBanner{
+    .text{
+      font-size: 60px;
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .endBanner{
+    .text{
+      font-size: 72px;
     }
   }
 }

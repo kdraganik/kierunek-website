@@ -12,7 +12,7 @@ export default function Layout({ children, light }) {
         <meta name="description" content="Jesteśmy grupą ludzi, których marzeniem jest zachęcić innych do życia z Bogiem. Spotykamy się w każdą niedzielę o godzinie 11:00." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {light ? <NavbarLight/> : <Navbar/>}
+      <Navbar light={light} />
         <div className={styles.container}>{children}</div>
       <Footer />
     </>

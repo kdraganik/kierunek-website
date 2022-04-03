@@ -29,13 +29,13 @@ export default function About() {
               Bartek i Danusia Tomczyńscy
             </div>
             <div className={styles.description}>
-              To szczęśliwi rodzice czwórki dzieci, pełni pasji dla Boga i ludzi. Oprócz prowadzenia kościoła zajmują się również innymi działaniami. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet, a także jest mówczynią konferencyjną.
+              To pełni pasji dla Boga i ludzi szczęśliwi rodzice czwórki dzieci. Z radością prowadzą kościół, zajmując się również innymi działaniami. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, a także pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet. Oboje przemawiają na różnych konferencjach i szkoleniach. 
             </div>
             <div className={styles.description}>
-              Kościół jest dla nas miejscem, w którym zwykli ludzie spotykają niezwykłego Boga. Mieszkając we Wrocławiu poznaliśmy wielu młodych ludzi, którzy szukali żywej relacji z Bogiem i pragnęli być częścią kościoła, który byłby otwarty i współczesny w swojej formie.
+              „Kościół jest dla nas miejscem, w którym zwykli ludzie spotykają niezwykłego Boga. Mieszkając we Wrocławiu poznaliśmy różne osoby, które szukały autentycznej relacji z Bogiem i pragnęły być częścią kościoła otwartego oraz współczesnego w swojej formie. Kościół Kierunek powstał w wyniku marzenia o miejscu, w którym relacje są ważniejsze niż forma, gdzie każdy czuje się jak w domu i może spotkać się ze zmieniającym życie Bogiem. Jesteśmy dumni i szczęśliwi, widząc, jak ludzie realizują swoje pasje i odnajdują w naszym kościele powołanie dla swojego życia.” 
             </div>
             <div className={styles.description}>
-              Kierunek powstał w odpowiedzi na te właśnie potrzeby i marzenia o kościele współczesnym, w którym relacje są ważniejsze niż forma, gdzie każdy czuje się jak w domu i może spotkać się z autentycznym, zmieniającym życie Bogiem. Jesteśmy dumni i szczęśliwi, widząc, jak ludzie realizują swoje pasje i odnajdują powołanie w naszym kościele. Odwiedź nas i zainspiruj się!
+              Odwiedź nas i zainspiruj się!
             </div>
           </div>
         </div>

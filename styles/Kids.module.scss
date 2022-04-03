@@ -3,8 +3,7 @@
 .wrapper{
   width: 100%;
   min-height: 100vh;
-  padding: 0 10%;
-  background-color: $kids1;
+  background-color: #23665A;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,22 +13,31 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url('../public/kidsBG.png');
+  background-size: cover;
+  .overlay{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $dark-color, $alpha: 0.55);
+  }
   .imageBox{
+    margin: 0 20px;
     position: relative;
-    width: 40%;
+    width: 21%;
     height: auto;
   }
 }
 .info{
-  width: 50%;
+  margin: 75px 10%;
+  width: 37%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 28px;
+  color: $light-color;
   .header{
     font-size: 28px;
     text-transform: uppercase;

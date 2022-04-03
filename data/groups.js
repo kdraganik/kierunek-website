@@ -20,7 +20,7 @@ const groups = [
   {
     name: "Grupa u Klaudii i Michała",
     time: "śr 19:00",
-    place: "ul. Litweska (Psie Pole)",
+    place: "ul. Litewska (Psie Pole)",
     description: ""
   },
   {

@@ -28,6 +28,12 @@
       text-decoration: underline;
     }
   }
+  .light{
+    color: $light-color;
+    a{
+      color: $light-color;
+    }
+  }
   li{
     text-transform: uppercase;
     padding: 3px 12px;

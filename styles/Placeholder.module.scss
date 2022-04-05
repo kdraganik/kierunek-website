@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: $light_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoBox{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: auto;
+}
+
+.animationBox{
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: inherit;
+    margin-right: 12px;
+  }
+}
+
+.message{
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+}

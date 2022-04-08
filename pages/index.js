@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </div>
         <div className={`${styles.section} ${styles.prayer}`}>
-          <Button text="dziękuję" link="https://karty-modlitwy.kosciolkierunek.pl/" />
+          <Button text="dziękuję" link="https://karty-modlitwy.kosciolkierunek.pl/" light={true}/>
           <div className={styles.contentBox}>
             <SectionDescription
               name="karty modlitwy"
@@ -62,7 +62,7 @@ export default function Home() {
               content="Chcemy modlić się o Ciebie. Wierzymy, że dla Boga wszystko jest możliwe. Daj nam znać, o co możemy się z Tobą pomodlić i koniecznie napisz nam o wysłuchanej modlitwie - chcemy dziękować Bogu razem z Tobą."
             />
           </div>
-          <Button text="proszę" link="https://karty-modlitwy.kosciolkierunek.pl/" />
+          <Button text="proszę" link="https://karty-modlitwy.kosciolkierunek.pl/" light={true}/>
         </div>
         <div className={`${styles.section} ${styles.support}`}>
           <div className={styles.contentBox}>

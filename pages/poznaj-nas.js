@@ -23,6 +23,7 @@ export default function About() {
           </div>
         </div>
         <div className={styles.pastors}>
+          <div className={styles.bg}></div>
           <div className={styles.text}>
             <div className={styles.title}>pastorzy</div>
             <div className={styles.name}>

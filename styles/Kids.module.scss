@@ -3,7 +3,8 @@
 .wrapper{
   width: 100%;
   min-height: 100vh;
-  background-color: #23665A;
+  background-color: #265F91;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +23,7 @@
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: $dark-color, $alpha: 0.55);
+    background-color: rgba($dark-color, 0.6);
   }
   .imageBox{
     margin: 0 20px;
@@ -32,13 +33,12 @@
   }
 }
 .info{
-  margin: 75px 10%;
-  width: 37%;
+  margin: 4rem;
+  max-width: 90%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: $light-color;
   .header{
     font-size: 28px;
     text-transform: uppercase;
@@ -48,5 +48,11 @@
   .description{
     font-size: 16px;
     margin-bottom: 16px;
+  }
+}
+@media (min-width: 1024px){
+  .info{
+    margin: 75px 10%;
+    max-width: 40%;
   }
 }

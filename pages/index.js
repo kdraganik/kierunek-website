@@ -13,6 +13,8 @@ export default function Home() {
     <Layout>
       <div className={styles.wrapper}>
         <div className={`${styles.section} ${styles.startBanner}`}>
+          <div className={styles.bg}></div>
+          <div className={styles.overlay}></div>
           <div className={styles.center}>
             <h1>Kochamy </h1>
             <Typewriter

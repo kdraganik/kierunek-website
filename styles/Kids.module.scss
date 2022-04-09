@@ -32,13 +32,24 @@
     height: auto;
   }
 }
+.infoBox{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../public/kids_collage.png');
+  background-size: cover;
+  background-position: center;
+}
 .info{
+  background-color: #265F91;
   margin: 4rem;
   max-width: 90%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 20px;
   .header{
     font-size: 28px;
     text-transform: uppercase;
@@ -51,6 +62,9 @@
   }
 }
 @media (min-width: 1024px){
+  .infoBox{
+    justify-content: flex-end;
+  }
   .info{
     margin: 75px 10%;
     max-width: 40%;

@@ -59,6 +59,7 @@ export default function Home() {
           <Button text="dziękuję" link="https://karty-modlitwy.kosciolkierunek.pl/" light={true}/>
           <div className={styles.contentBox}>
             <SectionDescription
+              dark={true}
               name="karty modlitwy"
               header="Potrzebujesz modlitwy?"
               content="Chcemy modlić się o Ciebie. Wierzymy, że dla Boga wszystko jest możliwe. Daj nam znać, o co możemy się z Tobą pomodlić i koniecznie napisz nam o wysłuchanej modlitwie - chcemy dziękować Bogu razem z Tobą."
@@ -80,6 +81,7 @@ export default function Home() {
           <div className={styles.top}>
             <div className={styles.contentBox}>
               <SectionDescription
+                dark={true}
                 name="social media"
                 header="Zobacz jak działamy"
                 content="Chcemy być blisko Ciebie, dlatego zapraszamy do śledzenia nas w social mediach. Zainspiruj się i bądź na bieżąco z tym, co się u nas dzieje."

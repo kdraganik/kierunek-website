@@ -25,6 +25,7 @@
   margin: 2rem 0;
   padding: 3rem 0;
 }
+
 .contentBox{
   margin: 1rem;
 }
@@ -44,7 +45,7 @@
   margin-top: 0;
   .bg{
     background-image: url('../public/heroBG.jpg');
-    background-position: center;
+    background-position: 28% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -94,6 +95,20 @@
     max-width: 16rem;
   }
 }
+@media (min-width: 420px) {
+  .startBanner{
+    .bg{
+      background-position: 42% 50%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .startBanner{
+    .bg{
+      background-position: center;
+    }
+  }
+}
 
 /* 2.2 Credo */
 .credo{
@@ -117,20 +132,26 @@
 
 /* 2.3 Week */
 .week{
-  background-image: url('../public/relations_collage.png');
-  background-position: 0 0;
-  background-size: cover;
+  width: 100vw;
+  padding: 5rem calc(4% + 1rem);
   justify-content: flex-end;
   align-items: center;
+  background-image: url('../public/relations_collage.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* 2.4 Kids */
 .kids{
+  width: 100vw;
+  padding: 5rem calc(4% + 1rem);
   justify-content: flex-end;
   align-items: center;
   background-image: url('../public/kids_collage.png');
   background-position: 0 0;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* 2.5 Prayer */

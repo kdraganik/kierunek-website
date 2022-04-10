@@ -5,13 +5,13 @@ export default function Map() {
   const [size, setSize] = useState(0)
 
   const handleWindowResize = () => {
-    if(window.innerWidth < 320 || window.innerHeight < 320){
+    if(window.innerWidth < 320){
       setSize(200)
     }
-    else if(window.innerWidth < 480 || window.innerHeight < 480){
+    else if(window.innerWidth < 480){
       setSize(250)
     }
-    else if(window.innerWidth < 1024 || window.innerHeight < 1024){
+    else if(window.innerWidth < 1024){
       setSize(350)
     }
     else{

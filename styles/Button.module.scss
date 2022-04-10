@@ -5,16 +5,16 @@
   font-weight: 900;
   color: $dark-color;
   margin: 20px 0;
-  padding: 1.5rem 5rem;
+  padding: 1.2rem 4rem;
   text-transform: uppercase;
   display: inline-block;
   border: 4px solid $dark-color;
-  background-color: $light-color;
+  background-color: rgba($light-color, .8);
 
   &.light{
     color: $light-color;
     border: 4px solid $light-color;
-    background-color: $dark-color;
+    background-color: rgba($dark-color, .8);
   }
 
   a &{

@@ -1,15 +1,15 @@
 @import './variables.scss';
 
 .wrapper{
-  padding: 20px;
+  padding: 10px;
 }
 
 .light{
-  background-color: $light_color;
+  background-color: rgba($light_color, .8);
 }
 
 .dark{
-  background-color: $dark_color;
+  background-color: rgba($dark_color, .8);
 }
 
 .name{

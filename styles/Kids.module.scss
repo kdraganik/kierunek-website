@@ -40,16 +40,17 @@
   background-image: url('../public/kids_collage.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .info{
-  background-color: #265F91;
+  background-color: rgba(#265F91, 0.8);
   margin: 4rem;
   max-width: 90%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  padding: 10px;
   .header{
     font-size: 28px;
     text-transform: uppercase;

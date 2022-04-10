@@ -35,4 +35,7 @@ body::-webkit-scrollbar {
 }
 input{
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

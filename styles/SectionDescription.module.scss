@@ -1,7 +1,15 @@
 @import './variables.scss';
 
 .wrapper{
-  padding: 0;
+  padding: 10px;
+}
+
+.light{
+  background-color: rgba($light_color, .8);
+}
+
+.dark{
+  background-color: rgba($dark_color, .8);
 }
 
 .name{
@@ -10,10 +18,10 @@
 }
 
 .header{
-  font-size: 36px;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
 .content{
-  font-size: 18px;
+  font-size: 1.4rem;
 }

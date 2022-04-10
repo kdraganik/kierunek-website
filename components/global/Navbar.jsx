@@ -1,12 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from '../../styles/Navbar.module.scss'
 
 export default function Navbar({ light }) {
 
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [width, setWidth] = useState(0)
 
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    handleWindowResize();
+    window.addEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, []);
+
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <navbar className={`${styles.navbar}`}>
@@ -14,7 +25,7 @@ export default function Navbar({ light }) {
       <Link href="/" passHref>
         <div className={styles.logoBox}>
         <Image 
-          height={200} 
+          height={100} 
           width={200} 
           objectFit="contain" 
           src={ light ? "/logo_white.svg" : "/logo_black.svg" } 
@@ -22,7 +33,7 @@ export default function Navbar({ light }) {
         />
         </div>
       </Link>
-      <ul className={`${styles.links} ${light ? styles.light : ""} ${menuOpen ? "" : styles.hidden}`} onClick={()=>setMenuOpen(false)}>
+      <ul className={`${styles.links} ${light ? styles.light : ""} ${width >= 1024 ? "" : menuOpen ? "" : styles.hidden}`} onClick={()=>setMenuOpen(false)}>
         <div className={styles.close} />
         <Link href="/" passHref>
           <div className={styles.innerLogoBox}>

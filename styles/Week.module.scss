@@ -10,6 +10,7 @@
   align-items: center;
 }
 .banner{
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,18 +20,49 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 }
+.arrowBox{
+  position: absolute;
+  bottom: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .text{
+    text-transform: uppercase;
+    color: $main2;
+    font-size: .8rem;
+  }
+  .arrow{
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-right: 1px solid $dark-color;
+    border-bottom: 1px solid $dark-color;
+  }
+}
+@media (min-width: 480px){
+  .arrowBox{
+    bottom: 10%;
+  }
+}
+@media (min-width: 769px){
+  .arrowBox{
+    bottom: 15px;
+  }
+}
+
 .groups{
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 4rem;
 }
 .formBox{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 50px 0;
+  margin: 4rem 0;
   padding: 0 10%;
 }

@@ -7,7 +7,7 @@ import groups from '../data/groups'
 import { useState, useEffect } from 'react'
 
 const images = [
-  { url: "/slide1.jpg" },
+  { url: "/slide1.png" },
   { url: "/slide2.png" }
 ];
 
@@ -49,6 +49,10 @@ export default function Week() {
               autoPlay={true}
               autoPlayDelay={5.0}
             />
+          </div>
+          <div className={styles.arrowBox}>
+            <div className={styles.text}>Nasze grupy domowe</div>
+            <div className={styles.arrow}></div>
           </div>
         </div>
         <div className={styles.groups}>

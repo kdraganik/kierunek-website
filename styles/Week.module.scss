@@ -10,6 +10,7 @@
   align-items: center;
 }
 .banner{
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,26 @@
   align-items: center;
   .sliderBox{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+.arrowBox{
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .text{
+    text-transform: uppercase;
+    color: $main2;
+    font-size: .8rem;
+  }
+  .arrow{
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-right: 1px solid $dark-color;
+    border-bottom: 1px solid $dark-color;
   }
 }
 .groups{

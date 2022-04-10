@@ -13,14 +13,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   height: 100vh;
-  margin: 0 10%;
+  padding: 10% 2% 0 2%;
   p{
-    margin-bottom: 36px;
+    margin-bottom: 1.4rem;
   }
   span{
     color: $light-color;
@@ -33,42 +33,109 @@
     h2{
       display: inline-block;
       font-size: inherit;
-      margin-right: 12px;
+      margin-right: 1rem;
     }
   }
 }
+
+@media (min-width: 480px){
+  .credo{
+    padding: 10% 4% 0 4%;
+  }
+}
+
+@media (min-width: 768px){
+  .credo{
+    padding: 10% 6% 0 6%;
+  }
+}
+
+@media (min-width: 1024px){
+  .credo{
+    padding: 10% 8% 0 8%;
+  }
+}
+
 .pastors{
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url('/pastors.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 12%;
-  color: $light-color;
-  padding: 0 10%;
+  color: $dark-color;
+  .bg{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+    background-image: url('/pastors.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 12% 15%;
+  }
   .text{
-    width: 45%;
+    margin: 3rem;
+    padding: 1em;
+    z-index: 1;
+    max-width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
     .title{
-      font-size: 11px;
+      font-size: 1.3rem;
       text-transform: uppercase;
       color: $main1;
     }
     .name{
       font-weight: 900;
-      font-size: 28px;
+      font-size: 2.8rem;
       margin-bottom: 5px;
     }
     .description{
-      margin-bottom: 10px;
-      font-size: 14px;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .pastors{
+    .bg{
+      min-height: 70vh;
+    }
+  }
+}
+@media (min-width: 1024px){
+  .pastors{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: $light-color;
+    .bg{
+      position: absolute;
+      background-position: 20% 15%;
+    }
+    .text{
+      max-width: 40%;
+      .title{
+        font-size: 1rem;
+      }
+      .name{
+        font-size: 2.4rem;
+      }
+      .description{
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media (max-aspect-ratio: 6/5){
+    .pastors{
+      .text{
+        background-color: rgba($dark-color, 0.4);
+      }
     }
   }
 }

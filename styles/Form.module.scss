@@ -1,19 +1,23 @@
 @import './variables.scss';
 
 .form{
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+@media (min-width: 768px){
+  .form{
+    width: 50%;
+  }
+}
 .textInput{
   width: 100%;
   padding: 4px;
   border-bottom: 2px solid $dark_color;
   background: none;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   outline: none;
   
   &:focus{
@@ -23,39 +27,48 @@
   :-webkit-autofill:hover, 
   :-webkit-autofill:focus, 
   :-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 2rem white inset !important;
   }
 }
 .label{
   align-self: flex-start;
   display: block;
-  margin: 14px 0 0 0;
+  margin: 1.2rem 0 0 0;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
 .submit{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 1.2em;
-  width: 180px;
-  font-size: 1rem;
-  padding: 10px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 900;
+  color: $dark-color;
+  margin: 20px 0;
+  padding: 1.2rem 4rem;
   text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 2px;
-  border: 2px solid $light_color;
-  background-color: $dark_color;
-  color: $light_color;
+  display: inline-block;
+  border: 4px solid $dark-color;
+  background-color: rgba($light-color, 1);
   transition: all .3s ease-out;
+  cursor: pointer;
+
+  &.light{
+    color: $light-color;
+    border: 4px solid $light-color;
+    background-color: rgba($dark-color, 1);
+    &:hover{
+      background-color: $light-color;
+      color: $dark-color;
+    }
+  }
+
+  a &{
+    text-decoration: none;
+  }
+
   &:hover{
-    background-color: $light_color;
-    border-color: $dark_color;
-    color: $dark_color;
+    background-color: $dark-color;
+    color: $light-color;
   }
 }
 
@@ -117,6 +130,6 @@
 
 .header{
   font-weight: 900;
-  font-size: 36px;
+  font-size: 3rem;
   text-transform: uppercase;
 }

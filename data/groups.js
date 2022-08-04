@@ -3,13 +3,13 @@ const groups = [
     name: "Grupa dla kobiet",
     time: "wt 18:30 (co dwa tyg)",
     place: "Kościół Kierunek",
-    description: "Są to spotkania, podczas których rozmawiamy o sprawach ważnych dla kobiet, wspieramy się nawzajem, modlimy się o swoje potrzeby. Spotkania odbywają się w sali Kierunku. Prowadzone są w formie dyskusji i otwartej rozmowy przy kawie i ciastkach."
+    description: "Są to spotkania, podczas których rozmawiamy o sprawach ważnych dla kobiet, wspieramy się nawzajem, modlimy się o swoje potrzeby. Spotkania odbywają się w sali Kierunku. Prowadzone są w formie dyskusji i otwartej rozmowy przy kawie i ciastkach. "
   },
   {
     name: "Grupa u Martyny i Mateusza",
     time: "śr 18:30",
     place: "ul. Vespucciego (Swojczyce)",
-    description: "Podczas naszych spotkań modlimy się o siebie nawzajem, studiujemy historie biblijne i dyskutujemy nad bieżącymi wydarzeniami w Polsce i na świecie. Towarzyszy nam miła atmosfera i smaczny poczęstunek."
+    description: "Podczas naszych spotkań modlimy się o siebie nawzajem, studiujemy historie biblijne i dyskutujemy nad bieżącymi wydarzeniami w Polsce i na świecie. Towarzyszy nam miła atmosfera i smaczny poczęstunek. "
   },
   {
     name: "English speaking group",

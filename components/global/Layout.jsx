@@ -9,7 +9,7 @@ export default function Layout({ children, light }) {
     <>
       <Head>
         <title>Kościół Kierunek</title>
-        <meta name="description" content="Jesteśmy grupą ludzi, których marzeniem jest zachęcić innych do życia z Bogiem. Spotykamy się w każdą niedzielę o godzinie 11:00." />
+        <meta name="description" content="Kościół Zielonoświątkowy Kierunek. Jesteśmy grupą ludzi, których marzeniem jest zachęcić innych do życia z Bogiem. Spotykamy się w każdą niedzielę o godzinie 11:00." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar light={light} />

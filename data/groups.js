@@ -26,7 +26,7 @@ const groups = [
   {
     name: "Spotkania modlitewne",
     time: "śr 18:00",
-    place: "Kościół kieunek",
+    place: "Kościół Kierunek",
     description: "Wierzymy, że modlitwa jest kluczowym aspektem życia, poprzez modlitwę kontaktujemy się z Bogiem i w ten sposób mamy wpływ na środowisko wokół nas. Modlimy się w 3 aspektach, po pierwsze o osobiste potrzeby osób uczestniczących w spotkaniu oraz tych, które wypełniły kartę modlitwy. Modlimy się o sprawy bieżące oraz błogosławimy nasz kraj, nasze miasto i nasz kościół. Spotkania modlitewne organizowane przez nasz kościół są otwarte i każdy może w nich uczestniczyć."
   },
   {
@@ -38,7 +38,7 @@ const groups = [
   {
     name: "Grupa wsparcia",
     time: "pt 18:00",
-    place: "ul. Klasztorna (Wojszyce)",
+    place: "Kościół Kierunek",
     description: "Grupa Dawida, czyli od zera do bohatera. Jeśli potrzebujesz uzdrowienia wewnętrznego, szukasz sensu życia lub potrzebujesz przyjaciół, to miejsce jest dla Ciebie. Na grupie pracujemy nad tym, kim jesteśmy i co mamy w Bogu, jaka jest nasza tożsamość w Chrystusie."
   },
   

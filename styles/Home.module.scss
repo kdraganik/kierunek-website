@@ -44,10 +44,6 @@
   align-items: center;
   margin-top: 0;
   .bg{
-    background-image: url('../public/heroBG.jpg');
-    background-position: 28% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     top:0;
     left:0;
@@ -289,16 +285,20 @@
 
 /* 2.9 End banner */
 .endBanner{
-  background-image: url('../public/bannerBG.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   width: 100vw;
   justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
+  .bg{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+  }
   .overlay{
     position: relative;
     width: 100%;

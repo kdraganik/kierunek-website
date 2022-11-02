@@ -7,13 +7,23 @@ import styles from '../styles/Home.module.scss'
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Link from 'next/link';
+import heroBg from '../images/heroBg.jpg'
+import endBg from '../images/endBg.jpg'
 
 export default function Home() {
   return (
     <Layout>
       <div className={styles.wrapper}>
         <div className={`${styles.section} ${styles.startBanner}`}>
-          <div className={styles.bg}></div>
+          <div className={styles.bg}>
+            <Image
+              src={heroBg}
+              alt="hero background"
+              layout="fill"
+              objectFit="cover"
+              quality={80}
+            />
+          </div>
           <div className={styles.overlay}></div>
           <div className={styles.center}>
             <h1>Kochamy </h1>
@@ -122,6 +132,15 @@ export default function Home() {
           </div>
         </div>
         <div className={`${styles.section} ${styles.endBanner}`}>
+          <div className={styles.bg}>
+            <Image
+              src={endBg}
+              alt="hero background"
+              layout="fill"
+              objectFit="cover"
+              quality={80}
+            />
+          </div>
           <div className={styles.overlay}>
             <div className={styles.text}>
               <h1>Kochamy Boga</h1>

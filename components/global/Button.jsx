@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../../styles/Button.module.scss'
 
-export default function Button({text, link, light}) {
+export default function Button({text, light, link, open}) {
   return (
     link ? 
     <Link href={link} passHref>
@@ -11,6 +11,11 @@ export default function Button({text, link, light}) {
         </div>
       </a>
     </Link>
+    :
+    open ?
+    <div onClick={()=>open(true)} className={`${styles.wrapper} ${light ? styles.light : ""}`}>
+      {text}
+    </div>
     :
     <div className={`${styles.wrapper} ${light ? styles.light : ""}`}>
       {text}

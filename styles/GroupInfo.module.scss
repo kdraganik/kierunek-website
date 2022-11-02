@@ -1,48 +1,205 @@
 @import './variables.scss';
 
 .groupBox{
-  width: 47%;
+  width: calc(50% - 5.2em);
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 1rem 0;
+
+  .headerBox{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .dayTimeBox{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .placeNameBox{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .day, .time{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $main2;
+  }
+
+  .time{
+    margin-top: -0.5rem;
+  }
+
+  .name{
+    font-family: $secondary-font;
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .place{
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: -0.2rem;
+  }
+
+  .more{
+    font-family: $secondary-font;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .description{
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    margin-bottom: -.3rem;
+  }
+
+  &.leftAlign{
+    align-self: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: 20px;
+    .headerBox{
+      justify-content: flex-end;
+    }
+    .dayTimeBox{
+      align-items: flex-start;
+    }
+  }
+  &.rightAlign{
+    align-self: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 20px;
+    .headerBox{
+      justify-content: flex-start;
+    }
+    .dayTimeBox{
+      align-items: flex-end;
+    }
+  }
 }
 
-.left{
-  align-self: flex-start;
-  align-items: flex-end;
-  text-align: right;
-  margin-right: 3%;
-  margin-left: 20px;
-}
-.right{
-  align-self: flex-end;
-  align-items: flex-start;
-  text-align: left;
-  margin-left: 3%;
-  margin-right: 20px;
-}
+.popupBox{
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 1fr 6fr;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
 
-.time{
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: $main1;
-  max-width: 60%;
-}
+  .headerBox{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-.place{
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: $main2;
-  max-width: 60%;
-}
+    .dayTimeBox{
+      margin-right: .5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
 
-.name{
-  font-size: 2rem;
-  text-transform: uppercase;
-  max-width: 80%;
-}
+    .day, .time{
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $main2;
+    }
+  
+    .time{
+      margin-top: -0.5rem;
+    }
+  
+    .name{
+      font-family: $secondary-font;
+      font-size: 2.1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    
+    .place{
+      font-family: $secondary-font;
+      font-size: 1.2rem;
+      font-weight: 200;
+      margin-top: -0.2rem;
+    }
+  }
 
-.description{
-  font-size: 1.2rem;
+  .leaderBox{
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    p{
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-top: .2rem;
+    }
+
+    .photoBox{
+      width: 100%;
+      height: 65%;
+    }
+
+    .photo{
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .directionsBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    h3{
+      align-self: flex-start;
+    }
+  }
+
+  .leftBox{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightBox{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    font-family: $secondary-font;
+    font-weight: 400;
+    margin-bottom: .5rem;
+  }
 }

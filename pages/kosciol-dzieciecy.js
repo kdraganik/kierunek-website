@@ -1,12 +1,22 @@
 import Layout from '../components/global/Layout.jsx'
 import Image from 'next/image'
 import styles from '../styles/Kids.module.scss'
+import kidsBg from '../images/kidsBg.jpg'
 
 export default function Kids() {
   return (
     <Layout light={true} >
       <div className={styles.wrapper}>
         <div className={styles.banner}>
+          <div className={styles.bg}>
+            <Image
+              src={kidsBg}
+              alt="hero background"
+              layout="fill"
+              objectFit="cover"
+              quality={80}
+            />
+          </div>
           <div className={styles.overlay}>
             <div className={styles.imageBox}>
               <Image 

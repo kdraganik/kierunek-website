@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
 
   margin: 1rem 0;
 
@@ -105,16 +105,12 @@
       }
     }
   }
-
-  @media (min-width: 480px){
-    align-items: flex-end;
-  }
 }
 
 .popupBox{
   display: grid;
-  grid-template-columns: 6fr 4fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 60% 30%;
   column-gap: 1.5rem;
   row-gap: 1rem;
   width: 100%;
@@ -122,7 +118,7 @@
   padding: 2rem;
 
   .headerBox{
-    grid-column: 1 / 3;
+    grid-column: 1;
     grid-row: 1;
     width: 100%;
     display: flex;
@@ -164,7 +160,6 @@
 
   .leaderBox{
     width: 100%;
-    height: 100%;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -179,7 +174,8 @@
 
     .photoBox{
       width: 100%;
-      height: 65%;
+      height: 100%;
+      max-height: 25vh;
     }
 
     .photo{
@@ -195,7 +191,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-start;
 
     h3{
@@ -221,5 +217,33 @@
     font-family: $secondary-font;
     font-weight: 400;
     margin-bottom: .5rem;
+  }
+
+  .mapBox{
+    display: none;
+  }
+
+  @media (min-width: 769px){
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr 6fr;
+
+    .headerBox{
+      grid-column: 1 / 3;
+    }
+
+    .leaderBox{
+      .photo{
+        max-height: 100%;
+      }
+    }
+
+    .directionsBox{
+      align-items: flex-end;
+    }
+
+    .mapBox{
+      width: 100%;
+      display: block;
+    }
   }
 }

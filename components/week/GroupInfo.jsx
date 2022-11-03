@@ -94,7 +94,9 @@ export default function GroupInfo({group, i}) {
             <div className={styles.rightBox}>
               <div className={styles.directionsBox}>
                 <h3>Mapa</h3>
-                <Map url={urlMapa}/>
+                <div className={styles.mapBox}>
+                  <Map className={styles.map} url={urlMapa}/>
+                </div>
                 <Button text="dojazd" link={urlDojazd}/>
               </div>
             </div>

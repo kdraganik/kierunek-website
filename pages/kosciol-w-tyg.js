@@ -5,12 +5,12 @@ import SimpleImageSlider from 'react-simple-image-slider'
 import styles from '../styles/Week.module.scss'
 import { useState, useEffect } from 'react'
 
-export default function Week() {
+export default function Week({groups, images}) {
 
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
-  const [groups, setGroups] = useState([])
-  const [images, setImages] = useState([])
+  // const [groups, setGroups] = useState([])
+  // const [images, setImages] = useState([])
 
   const handleWindowResize = () => {
     let tempWidth = window.innerWidth * 0.8;
@@ -28,37 +28,6 @@ export default function Week() {
     window.addEventListener('resize', handleWindowResize);
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
-
-  useEffect(() => {
-    fetch('/api/info-grupy')
-      .then(async response => {
-          if (!response.ok) {
-              const error = (data && data.message) || response.statusText;
-              return Promise.reject(error);
-          }
-          const data = await response.json();
-          setGroups(data.records)
-      })
-      .catch(error => {
-          console.error(error);
-      });
-  }, [])
-
-  useEffect(() => {
-    fetch('/api/ogloszenia')
-      .then(async response => {
-          if (!response.ok) {
-              const error = (data && data.message) || response.statusText;
-              return Promise.reject(error);
-          }
-          const data = await response.json();
-          console.log(data)
-          setImages(data)
-      })
-      .catch(error => {
-          console.error(error);
-      });
-  }, [])
 
   return (
     <Layout>
@@ -103,4 +72,32 @@ export default function Week() {
       </div>
     </Layout>
   )
+}
+
+export async function getServerSideProps() {
+  let dataFetched = 0
+  let dataToFetch = 2
+
+  const apiKey = process.env.AIRTABLE_API_KEY;
+  const responseGroups = await fetch("https://api.airtable.com/v0/appUYxhvagqok4gaI/Lista?sort%5B0%5D%5Bfield%5D=order", {
+    headers: {
+      Authorization: "Bearer " + apiKey
+    }
+  })
+  const groupsData = await responseGroups.json()
+  const groups = groupsData.records
+  const responseImages = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?maxRecords=3&view=Grid%20view", {
+    headers: {
+      Authorization: "Bearer " + apiKey
+    }
+  })
+  const imagesData = await responseImages.json()
+  const images = await imagesData.records.map(ele => { return {url: ele.fields.slide[0].url} })
+
+  return {
+    props: {
+      groups,
+      images
+    }
+  };
 }

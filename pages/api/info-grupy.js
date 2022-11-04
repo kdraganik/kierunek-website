@@ -10,7 +10,7 @@ export default async function handler(req, res){
       }
     })
     const data = await response.json()
-    res.status(200).json(data)
+    res.status(200).json(data.records)
   }
   catch(err){
     res.status(502).json({message: "Error while geting data from AirTables"})

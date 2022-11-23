@@ -9,8 +9,6 @@ export default function Week({groups, images}) {
 
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
-  // const [groups, setGroups] = useState([])
-  // const [images, setImages] = useState([])
 
   const handleWindowResize = () => {
     let tempWidth = window.innerWidth * 0.8;
@@ -75,9 +73,6 @@ export default function Week({groups, images}) {
 }
 
 export async function getServerSideProps() {
-  let dataFetched = 0
-  let dataToFetch = 2
-
   const apiKey = process.env.AIRTABLE_API_KEY;
   const responseGroups = await fetch("https://api.airtable.com/v0/appUYxhvagqok4gaI/Lista?sort%5B0%5D%5Bfield%5D=order", {
     headers: {

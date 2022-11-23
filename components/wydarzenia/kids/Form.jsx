@@ -1,41 +1,50 @@
 import { useState } from "react"
-import styles from "../../styles/wyjazd-karlowice/Form.module.scss"
+import styles from "../../../styles/wydarzenia/Kids.module.scss"
 
 export default function Form ({ setIsSend }){
 
   const [isLoading, setIsLoading] = useState(false)
   const [status, setStatus] = useState('');
-  const [name, setName] = useState("")
+  const [kidName, setKidName] = useState("")
+  const [parentName, setParentName] = useState("")
   const [phone, setPhone] = useState("")
   const [email, setEmail] = useState("")
 
-  async function handleSubmit(e){
+  function handleSubmit(e){
     e.preventDefault()
     setIsLoading(true);
     setStatus('');
     const data = {
-      name,
+      kidName,
+      parentName,
       phone,
       email
     }
-
-    try{
-      await postData(data);
-      setIsLoading(false);
-      setIsSend(true);
-    }
-    catch(err){
+    fetch("/api/wydarzenia-kids", {
+      method: "POST",
+      body: JSON.stringify(data)
+    }).then(res =>{
+      if(res.ok){
+        setIsLoading(false);
+        setIsSend(true);
+      }
+      else{
+        throw new Error("Bad request")
+      }
+    }).catch(err => {
       console.log(err);
       setIsLoading(false);
       setStatus('ERR')
-    } 
+    })
   }
 
   return (
     <div className={styles.wrapper}>
       <form className={styles.formContainer} onSubmit={ handleSubmit }>
-        <label htmlFor="imie" className={styles.label}>Imię i nazwisko</label>
-        <input autoFocus required type="text" className={styles.textInput} id="imie" value={name} onChange={e => setName(e.target.value)}/>
+        <label htmlFor="imie-dziecka" className={styles.label}>Imię i nazwisko dziecka</label>
+        <input autoFocus required type="text" className={styles.textInput} id="imie-dziecka" value={kidName} onChange={e => setKidName(e.target.value)}/>
+        <label htmlFor="imie-rodzica" className={styles.label}>Imię i nazwisko rodzica</label>
+        <input required type="text" className={styles.textInput} id="imie-rodzica" value={parentName} onChange={e => setParentName(e.target.value)}/>
         <label htmlFor="telefon" className={styles.label}>Numer telefonu</label>
         <input required type="tel" className={styles.textInput} id="telefon" value={phone} onChange={e => setPhone(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>
@@ -45,17 +54,4 @@ export default function Form ({ setIsSend }){
       </form>
     </div>
   )
-}
-
-async function postData(data){
-  try{
-    const res = await fetch("/api/wyjazd-karlowice", {
-      method: "POST",
-      body: JSON.stringify(data)
-    })
-    console.log(res)
-  }
-  catch(err){
-    setStatus('err');
-  }
 }

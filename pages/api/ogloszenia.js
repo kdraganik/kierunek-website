@@ -1,5 +1,4 @@
 export default async function handler(req, res){
-  const Airtable = require('airtable');
 
   const apiKey = process.env.AIRTABLE_API_KEY;
 

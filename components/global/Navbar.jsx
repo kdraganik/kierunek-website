@@ -47,8 +47,8 @@ export default function Navbar({ light }) {
           </div>
         </Link>
         <li><Link href="/poznaj-nas">poznaj nas</Link></li>
-        <li><Link href="/kosciol-w-tyg">kosciół w tygodniu</Link></li>
-        <li><Link href="/kosciol-dzieciecy">kosciół dziecięcy</Link></li>
+        <li><Link href="/kosciol-w-tyg">kościół w tygodniu</Link></li>
+        <li><Link href="/kosciol-dzieciecy">kościół dziecięcy</Link></li>
         <li><Link href="https://podcast.kosciolkierunek.pl">podcast</Link></li>
         <li><Link href="https://karty-modlitwy.kosciolkierunek.pl/">karty modlitwy</Link></li>
         <li><Link href="https://wspieram.kosciolkierunek.pl/">wsparcie</Link></li>

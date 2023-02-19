@@ -46,7 +46,7 @@ export async function getServerSideProps() {
 
     const apiKey = process.env.AIRTABLE_API_KEY;
 
-    const response1 = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?maxRecords=3&view=Grid%20view", {
+    const response1 = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?view=Grid%20view", {
     headers: {
         Authorization: "Bearer " + apiKey
     }

@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Form from '../../components/wydarzenia/kids/Form'
 import Greetings from '../../components/wydarzenia/kids/Greetings'
 import styles from '../../styles/wydarzenia/Kids.module.scss'
-import logo from '../../public/logo_black.svg'
 import { useState } from 'react'
 
 export default function KidsEvent() {
@@ -13,7 +12,7 @@ export default function KidsEvent() {
   return (
     <>
       <Head>
-        <title>Urodziny Jezusa</title>
+        <title>Wydarzenie wielkanocne</title>
       </Head>
       <div className={styles.container}>
         <div className={styles.imageBox}>
@@ -23,7 +22,7 @@ export default function KidsEvent() {
             objectFit="contain"
             src="/logo_kids.svg" alt="logo_kids"/>
         </div>
-        <h1 className={styles.header1}>Urodziny Jezusa</h1>
+        <h1 className={styles.header1}>Wydarzenie wielkanocne</h1>
         {isSend ? <Greetings /> : <Form setIsSend={ setIsSend }/>}
       </div>
     </>

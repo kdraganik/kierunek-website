@@ -5,11 +5,9 @@ export default function Button({text, light, link, open}) {
   return (
     link ? 
     <Link href={link} passHref>
-      <a>
         <div className={`${styles.wrapper} ${light ? styles.light : ""}`}>
           {text}
         </div>
-      </a>
     </Link>
     :
     open ?

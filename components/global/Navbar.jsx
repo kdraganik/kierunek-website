@@ -25,9 +25,8 @@ export default function Navbar({ light }) {
       <Link href="/" passHref>
         <div className={styles.logoBox}>
         <Image 
-          height={100} 
-          width={200} 
-          objectFit="contain" 
+          height={50} 
+          width={100}
           src={ light ? "/logo_white.svg" : "/logo_black.svg" } 
           alt="logo"
         />
@@ -38,9 +37,8 @@ export default function Navbar({ light }) {
         <Link href="/" passHref>
           <div className={styles.innerLogoBox}>
             <Image 
-              height={200} 
-              width={200} 
-              objectFit="contain" 
+              height={100} 
+              width={100} 
               src={ light ? "/logo_white.svg" : "/logo_black.svg" } 
               alt="logo"
             />

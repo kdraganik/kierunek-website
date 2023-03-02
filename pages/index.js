@@ -149,8 +149,8 @@ export default function Home() {
             </div>
             <div className={styles.imageBox}>
               <Image
-                width={500}
-                height={500}
+                width={150}
+                height={150}
                 objectFit='contain'
                 className={styles.logo} 
                 src="/logo_white.svg" alt="logo"

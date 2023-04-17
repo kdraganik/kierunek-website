@@ -81,7 +81,7 @@ export async function getServerSideProps() {
   })
   const groupsData = await responseGroups.json()
   const groups = groupsData.records
-  const responseImages = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?maxRecords=3&view=Grid%20view", {
+  const responseImages = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?view=Grid%20view", {
     headers: {
       Authorization: "Bearer " + apiKey
     }

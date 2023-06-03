@@ -12,6 +12,7 @@ export default function Conf(){
                     style={{objectFit: "cover"}}
                     src={clouds}
                     alt="chmury"
+                    quality={10}
                 />
             </div>
             <div className={styles.hero}>

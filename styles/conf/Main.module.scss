@@ -1,7 +1,10 @@
 @import url("https://use.typekit.net/djo7qmi.css");
 .container{
     font-family: 'ivypresto-display', serif;
-    background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%); 
+    background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 .bg{
     position: fixed;
@@ -47,11 +50,13 @@
 .contentWrapper{
     position: relative;
     z-index: 2;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 8rem;
     font-weight: 300;
+    max-width: 1200px;
 
     .contentBox{
+        
         border-radius: 1rem;
         background-color: white;
         padding: 3rem;

@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/djo7qmi.css");
+.container{
+    font-family: 'ivypresto-display', serif;
+    background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%); 
+}
+.bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+.hero{
+    background: none;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    .logoBox{
+        position: relative;
+        width: 40%;
+        height: 100%;
+    }
+    .title{
+        margin-top: 3%;
+        font-size: 3rem;
+    }
+    .placeAndTime{
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+
+        div{
+            display: inline-block;
+        }
+
+        .line{
+            margin: 0 .5rem;
+            width: 6rem;
+            border-bottom: 2px solid white;
+        }
+    }
+}
+.contentWrapper{
+    position: relative;
+    z-index: 2;
+    font-size: 1.6rem;
+    padding: 8rem;
+    font-weight: 300;
+
+    .contentBox{
+        border-radius: 1rem;
+        background-color: white;
+        padding: 3rem;
+        text-align: center;
+
+        p{
+            margin: 1rem 0;
+        }
+
+        .speaker{
+            font-style: italic;
+        }
+
+        .moreBox{
+            margin-top: 5rem;
+            font-weight: 600;
+        }
+
+    }
+}

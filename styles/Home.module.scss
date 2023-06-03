@@ -311,17 +311,18 @@
       align-self: flex-end;
       position: relative;
       width: 10rem;
-      margin-bottom: 6%;
+      height: 5rem;
+      margin-bottom: 3%;
       margin-right: 10%;
     }
   }
   .text{
     align-self: flex-start;
     color: $light-color;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
     text-align: left;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 10%;
     h1{
       font-size: inherit;

@@ -1,4 +1,3 @@
-import Layout from '../components/global/Layout.jsx'
 import SimpleImageSlider from 'react-simple-image-slider'
 import styles from '../styles/Info.module.scss'
 import { useState, useEffect } from 'react'
@@ -54,7 +53,7 @@ export async function getServerSideProps() {
     const data1 = await response1.json()
     const images1 = data1.records.map(ele => { return {url: ele.fields.slide[0].url} })
 
-    const response2 = await fetch("https://api.airtable.com/v0/appDdMOI2fKeW39Ka/Lista?maxRecords=3&view=Grid%20view", {
+    const response2 = await fetch("https://api.airtable.com/v0/appDdMOI2fKeW39Ka/Lista?view=Grid%20view", {
     headers: {
         Authorization: "Bearer " + apiKey
     }

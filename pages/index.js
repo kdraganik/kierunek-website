@@ -19,8 +19,8 @@ export default function Home() {
             <Image
               src={heroBg}
               alt="hero background"
-              layout="fill"
-              objectFit="cover"
+              fill={true}
+              style={{objectFit: "cover"}}
               quality={80}
             />
           </div>
@@ -100,12 +100,12 @@ export default function Home() {
             <div className={styles.links}>
               <Link href="https://www.facebook.com/kosciolkierunek" passHref>
                 <div className={styles.imageBox}>
-                  <Image layout="fill" src="/fb-icon.svg" alt="fb" />
+                  <Image fill={true} src="/fb-icon.svg" alt="fb" />
                 </div>
               </Link>
               <Link href="https://www.instagram.com/kosciolkierunek" passHref>
                 <div className={styles.imageBox}>
-                  <Image layout="fill" src="/ig-icon.svg" alt="ig" />
+                  <Image fill={true} src="/ig-icon.svg" alt="ig" />
                 </div>
               </Link>
             </div>
@@ -136,8 +136,8 @@ export default function Home() {
             <Image
               src={endBg}
               alt="hero background"
-              layout="fill"
-              objectFit="cover"
+              fill={true}
+              style={{objectFit: "cover"}}
               quality={80}
             />
           </div>
@@ -149,9 +149,7 @@ export default function Home() {
             </div>
             <div className={styles.imageBox}>
               <Image
-                width={150}
-                height={150}
-                objectFit='contain'
+                fill={true}
                 className={styles.logo} 
                 src="/logo_white.svg" alt="logo"
               />

@@ -29,12 +29,13 @@
         height: 100%;
     }
     .title{
-        margin-top: 3%;
+        margin-top: 6%;
         font-size: 3rem;
+        text-align: center;
     }
     .placeAndTime{
         font-size: 2.5rem;
-        margin-bottom: 3%;
+        margin-bottom: 6%;
 
         div{
             display: inline-block;
@@ -51,7 +52,7 @@
     position: relative;
     z-index: 2;
     font-size: 1.5rem;
-    padding: 8rem;
+    padding: 3.5rem;
     font-weight: 300;
     max-width: 1200px;
 

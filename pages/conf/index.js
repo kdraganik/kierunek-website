@@ -57,7 +57,7 @@ export default function Conf(){
                     <p>Specjalnie dla Pastorów przygotowaliśmy sesję dodatkową oraz darmowy obiad w sali kościoła Kierunek przy ul. Powstańców Śląskich 159.</p>
 
                     <div className={styles.moreBox}>
-                        Zapisy i więcej informacji wkrótce
+                        Rejstracja i więcej informacji wkrótce
                     </div>
                 </div>
             </div>

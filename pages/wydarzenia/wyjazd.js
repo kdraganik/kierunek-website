@@ -5,7 +5,7 @@ import Greetings from '../../components/wydarzenia/wyjazd/Greetings'
 import styles from '../../styles/wydarzenia/Wyjazd.module.scss'
 import { useState } from 'react'
 
-export default function KidsEvent() {
+export default function ChurchEvent() {
 
   const [isSend, setIsSend] = useState("")
 

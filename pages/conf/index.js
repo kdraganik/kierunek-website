@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/conf/Main.module.scss'
 import clouds from '../../images/clouds.png'
@@ -56,9 +57,9 @@ export default function Conf(){
                     
                     <p>Specjalnie dla Pastorów przygotowaliśmy sesję dodatkową oraz darmowy obiad w sali kościoła Kierunek przy ul. Powstańców Śląskich 159.</p>
 
-                    <div className={styles.moreBox}>
-                        Rejstracja i więcej informacji wkrótce
-                    </div>
+                    <Link href='/conf/rejstracja' className={styles.button}>
+                        Rejstracja
+                    </Link>
                 </div>
             </div>
         </div>

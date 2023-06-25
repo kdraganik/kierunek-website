@@ -1,0 +1,162 @@
+@import '../variables.scss';
+
+/* Main */
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ivypresto-display', serif;
+    background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%);
+  }
+  .header1{
+    color: #fff;
+    margin: -25px 0 15px 0;
+  }
+
+.logoBox{
+    position: relative;
+    width: 20%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+/* Form */
+.wrapper{
+    width: 266px;
+  }
+  .formContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textInput{
+    color: #fff;
+    width: 100%;
+    padding: 1px;
+    border: none;
+    background: none;
+    font-size: 1.8em;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    
+    &:focus{
+      border-bottom: 2px solid #fff;
+    }
+    :-webkit-autofill,
+    :-webkit-autofill:hover, 
+    :-webkit-autofill:focus, 
+    :-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+    }
+  }
+  .label{
+    color: #fff;
+    display: block;
+    margin: .3em 0;
+    font-weight: 300;
+    font-size: .9em;
+    text-transform: uppercase;
+  }
+  
+  .error{
+    margin-top: 10px;
+    color: red;
+  }
+  
+  .submit{
+    font-family: 'ivypresto-display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.2em;
+    width: 180px;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: rgba(40,90,125,1);
+    transition: all .3s ease-out;
+    &:hover{
+      background: #fff;
+      color: rgba(40,90,125,1);
+    }
+  }
+  
+  .loader{
+    display: inline-block;
+    position: relative;
+    width: 4em;
+    height: 4em;
+    & div {
+      position: absolute;
+      top: 33px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #fff;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    div:nth-child(1) {
+      left: 8px;
+      animation: lds-ellipsis1 0.6s infinite;
+    }
+    div:nth-child(2) {
+      left: 8px;
+      animation: lds-ellipsis2 0.6s infinite;
+    }
+    div:nth-child(3) {
+      left: 32px;
+      animation: lds-ellipsis2 0.6s infinite;
+    }
+    div:nth-child(4) {
+      left: 56px;
+      animation: lds-ellipsis3 0.6s infinite;
+    }
+    @keyframes lds-ellipsis1 {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes lds-ellipsis3 {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+    @keyframes lds-ellipsis2 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(24px, 0);
+      }
+    }
+  }
+
+  /* Greetings */
+.wrapper{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.instruction{
+    text-align: center;
+    color: #fff;
+}

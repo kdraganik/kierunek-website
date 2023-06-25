@@ -50,6 +50,7 @@ export default function Navbar({ light }) {
         <li><Link href="https://podcast.kosciolkierunek.pl">podcast</Link></li>
         <li><Link href="https://karty-modlitwy.kosciolkierunek.pl/">karty modlitwy</Link></li>
         <li><Link href="https://wspieram.kosciolkierunek.pl/">wsparcie</Link></li>
+        <li><Link href="/conf">conf</Link></li>
         <li><Link href="/#kontakt">kontakt</Link></li>
       </ul>
       <div className={`${styles.hamMenu} ${light ? styles.light : ""}`} onClick={()=>setMenuOpen(true)}/>

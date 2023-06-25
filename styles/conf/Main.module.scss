@@ -66,12 +66,46 @@
         padding: 3rem;
         text-align: center;
 
-        p{
-            margin: 1rem 0;
+        .speakersBox{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
+
+            .card {
+                padding: 1.5rem;
+                background-color: rgba(145,220,225,1);
+                border-radius: 1rem;
+             }
+     
+             .card:last-child{
+                 grid-column-start: 2;
+             }
+
+            @media (max-width: 1024px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                .card{
+                    grid-column: span 2;
+                }
+
+                .card:last-child{
+                    grid-column-end: 4;
+                    grid-column-start: 2;
+                }
+            }
+
+            @media (max-width: 768px){
+                grid-template-columns: 1fr;
+
+                .card:last-child{
+                    grid-column: span 2;
+                }
+            }
         }
 
-        .speaker{
-            font-style: italic;
+        p{
+            margin: 1rem 0;
         }
 
         .moreBox{

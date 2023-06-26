@@ -78,9 +78,9 @@
                 border-radius: 1rem;
              }
      
-             .card:last-child{
-                 grid-column-start: 2;
-             }
+            //  .card:last-child{
+            //      grid-column-start: 2;
+            //  }
 
             @media (max-width: 1024px){
                 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -89,10 +89,10 @@
                     grid-column: span 2;
                 }
 
-                .card:last-child{
-                    grid-column-end: 4;
-                    grid-column-start: 2;
-                }
+                // .card:last-child{
+                //     grid-column-end: 4;
+                //     grid-column-start: 2;
+                // }
             }
 
             @media (max-width: 768px){

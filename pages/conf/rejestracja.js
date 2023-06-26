@@ -12,7 +12,7 @@ export default function ConfRegistration() {
   return (
     <>
       <Head>
-        <title>Rejstracja</title>
+        <title>Rejestracja</title>
       </Head>
       <div className={styles.container}>
             <div className={styles.logoBox}>

@@ -52,10 +52,10 @@ export default function Conf(){
                             name="Mirosław i Ewa Szatkowscy"
                             description="Autorzy książki o trwałości małżeńskiej pt. „Z jakich klocków zbudować ten dom”. Są małżeństwem od 37 lat, mają 5 piątki dzieci i dziewięcioro wnucząt. Przez 25 lat wspólnie prowadzili wspólnotę Kościoła Zielonoświątkowego w Głogowie. Pastor Mirek jest absolwentem KSB Ustroń (obecna BST). Od października 2016 r. powierzono mu funkcję Prezbiter Okręgowego okręgu zachodniego, równocześnie jest człowiek Rady Kościoła."
                         />
-                        <SpeakerCard
+                        {/* <SpeakerCard
                             name="Mariusz i Wioletta Antoszczuk"
                             description="Pastorzy Kościoła Zielonoświątkowego „Kanaan” w Namysłowie. Razem z synem Maciejem z pasją wspierają misję „King’s Kids”, która misyjnie działa wśród młodzieży. Mariusz i Wioletta to absolwenci Warszawskiego Seminarium Teologicznego. Prężnie pomagają liderom i wspólnotom odnaleźć ponadnaturalne działanie Ducha Świętego w codziennym życiu. Pastor Mariusz jest autorem największej monografii z zakresu pentekostalizmu na rynku polskim, zatytułowanej „Obdarowani”."
-                        />
+                        /> */}
                         <SpeakerCard
                             name="Bartek i Danusia Tomczyńscy"
                             description="Pełni pasji dla Boga Pastorzy Kościoła Kierunek. Są rodzicami czwórki dzieci. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, a także pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet. Oboje przemawiają też na różnych konferencjach i szkoleniach."
@@ -80,8 +80,8 @@ export default function Conf(){
                     
                     <p>Specjalnie dla Pastorów przygotowaliśmy sesję dodatkową oraz darmowy obiad w sali kościoła Kierunek przy ul. Powstańców Śląskich 159.</p>
 
-                    <Link href='/conf/rejstracja' className={styles.button}>
-                        Rejstracja
+                    <Link href='/conf/rejestracja' className={styles.button}>
+                        Rejestracja
                     </Link>
                 </div>
             </div>

@@ -43,7 +43,7 @@ export default function Form ({ setIsSend }){
         <label htmlFor="imie" className={styles.label}>Imię</label>
         <input autoFocus required type="text" className={styles.textInput} id="imie" value={forename} onChange={e => setForename(e.target.value)}/>
         <label htmlFor="nazwisko" className={styles.label}>Nazwisko</label>
-        <input required type="tel" className={styles.textInput} id="nazwisko" value={surname} onChange={e => setSurname(e.target.value)}/>
+        <input required type="text" className={styles.textInput} id="nazwisko" value={surname} onChange={e => setSurname(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>
         <input required type="email" className={styles.textInput} id="email" value={email} onChange={e => setEmail(e.target.value)}/>
         {status == 'ERR' ? <div className={styles.error}>Wystąpił błąd, spróbuj ponownie</div> : ""}

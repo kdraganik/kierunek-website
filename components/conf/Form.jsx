@@ -38,7 +38,7 @@ export default function Form ({ setIsSend }){
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.header1}>Rejstracja</h1>
+      <h1 className={styles.header1}>Rejestracja</h1>
       <form className={styles.formContainer} onSubmit={ handleSubmit }>
         <label htmlFor="imie" className={styles.label}>Imię</label>
         <input autoFocus required type="text" className={styles.textInput} id="imie" value={forename} onChange={e => setForename(e.target.value)}/>

@@ -63,6 +63,11 @@
     font-weight: 500;
     max-width: 1200px;
 
+    @media (max-width: 768px){
+        padding: 1rem 0;
+        max-width: 100%;
+    }
+
     .contentBox{
         
         display: flex;
@@ -70,6 +75,12 @@
         align-items: center;
         padding: 3rem;
         text-align: center;
+
+        @media (max-width: 768px){
+            padding: 3rem 0;
+            margin: 2rem;
+            max-width: 100%;
+        }
 
         .sectionTitle{
             font-family: 'ivypresto-display', serif;
@@ -87,6 +98,10 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 20px;
             max-width: 1200px;
+
+            @media (max-width: 768px){
+                max-width: 100%;
+            }
 
             .card {
                 display: flex;

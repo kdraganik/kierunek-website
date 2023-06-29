@@ -138,6 +138,13 @@
                     font-family: 'ivypresto-display', serif;
                     font-size: 2rem;
                 }
+
+                .cardPhoto{
+                    margin: 1rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
              }
      
             //  .card:last-child{

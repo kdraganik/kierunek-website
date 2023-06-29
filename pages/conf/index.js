@@ -4,6 +4,12 @@ import styles from '../../styles/conf/Main.module.scss'
 import bg from '../../images/confBG.jpg'
 import clouds from '../../images/clouds.png'
 import SpeakerCard from '../../components/conf/SpeakerCard'
+import Ania from '../../images/Ania.jpg'
+import Bartek from '../../images/BartekDanusia.jpg'
+import Luke from '../../images/LukeAnia.jpg'
+import Mirek from '../../images/MirosławEwa.jpg'
+import Ronnie from '../../images/Ronnie.jpg'
+import Ryszard from '../../images/RyszardHalina.jpg'
 
 export default function Conf(){
 
@@ -83,10 +89,12 @@ export default function Conf(){
                         <SpeakerCard
                             name="Ryszard i Halina Krzywy"
                             description="Zaangażowani są w działalność proroczą. Są rodzicami trójki dzieci. Obecnie są członkami Kościoła Zielonoświątkowego w Nysie. Ryszard ukończył Wydział Medycyny Weterynaryjnej na Akademii Rolniczej we Wrocławiu oraz Zaoczne Seminarium Teologiczne w Ustroniu. Przez cztery lata pełnił funkcję pastora w zborze ZKE w Łambinowicach, a następnie w Prudniku w Kościele Zielonoświątkowym. Od 1996 r. roku w służbie proroczej – usługuje w wielu kościołach w kraju i za granicą, a od 2010 r. co roku prowadzi obóz proroczy."
+                            img={Ryszard}
                         />
                         <SpeakerCard
                             name="Mirosław i Ewa Szatkowscy"
                             description="Autorzy książki o trwałości małżeńskiej pt. „Z jakich klocków zbudować ten dom”. Są małżeństwem od 37 lat, mają 5 piątki dzieci i dziewięcioro wnucząt. Przez 25 lat wspólnie prowadzili wspólnotę Kościoła Zielonoświątkowego w Głogowie. Pastor Mirek jest absolwentem Seminarium Teologiczne w Ustroniu. Od października 2016 r. powierzono mu funkcję Prezbiter Okręgowego okręgu zachodniego, równocześnie jest człowiek Rady Kościoła."
+                            img={Mirek}
                         />
                         {/* <SpeakerCard
                             name="Mariusz i Wioletta Antoszczuk"
@@ -95,18 +103,22 @@ export default function Conf(){
                         <SpeakerCard
                             name="Bartek i Danusia Tomczyńscy"
                             description="Pełni pasji dla Boga Pastorzy Kościoła Kierunek. Są rodzicami czwórki dzieci. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, a także pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet. Oboje przemawiają też na różnych konferencjach i szkoleniach."
+                            img={Bartek}
                         />
                         <SpeakerCard
                             name="Luke i Ania Greenwood "
                             description="Ewangeliści, mówcy i artyści. Razem są wykładowcami Szkoły Misyjnej Stegiera, gdzie aktywnie angażują się w szkolenie zespołów misyjnych. Razem z dwójką dzieci mieszkają we Wrocławiu, gdzie zaangażowani są w pracę Kościoła Kierunek. Lukę jest dyrektorem organizacji Steiger Europe. Napisał też książkę „Global Youth Culture”. Ania założyła Fundację Steiger Polska. Jest misjonarką Steigera od 2006 r."
+                            img={Luke}
                         />
                         <SpeakerCard
                             name="Ania Nieżurawska"
                             description="Wykładowca akademicki storytellingu i coachingu. Autorka programów szkoleniowych dotyczących storytellingu, coachingu, komunikacji interpersonalnej oraz pracy zespołowej. Z pasją podąża za Bogiem, czynnie zaangażowana jest w rozwój Społeczności Chrześcijańskiej Południe w Warszawie. Od ponad dekady prowadzi procesy indywidualne i grupowe, których celem jest wsparcie liderów lokalnych wspólnot w sztuce wystąpień publicznych, budowaniu i zarządzaniu zespołami oraz w rozwoju zawodowym i osobistym."
+                            img={Ania}
                         />
                         <SpeakerCard
                             name="Ronnie Kołodziejski"
                             description="Pastor w Społeczności Chrześcijańskiej we Wrocławiu. W wieku 12 lat razem z rodzicami wyjechał na stałe do Kanady, gdzie oddał swoje życie Bogu, założył rodzinę i został pastorem. W 2021 roku razem z żoną Sarą i dwójką dzieci, na stałe wrócił do Polski. Zajmuje się pracą misyjną, głosił ewangelię na 6 kontynentach w około 50 krajach."
+                            img={Ronnie}
                         />
                     </div>
                     

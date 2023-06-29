@@ -1,16 +1,22 @@
+@import '../variables.scss';
 @import url("https://use.typekit.net/djo7qmi.css");
+
 .container{
-    font-family: 'ivypresto-display', serif;
+    font-family: $main-font;
     background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center; 
+    color: rgba(40,90,125,1);
 }
 .bg{
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 0;
+}
+.bgSlide img{
+    display: inline-block;
 }
 .hero{
     background: none;
@@ -29,31 +35,32 @@
         height: 100%;
     }
     .title{
-        margin-top: 6%;
+        font-family: 'ivypresto-display', serif;
+        margin-top: 50px;
         font-size: 3rem;
         text-align: center;
     }
-    .placeAndTime{
-        font-size: 2.5rem;
-        margin-bottom: 6%;
+    
+    .arrow{
+        position: relative;
+        bottom: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        transform: rotate(45deg);
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+    }
 
-        div{
-            display: inline-block;
-        }
-
-        .line{
-            margin: 0 .5rem;
-            width: 6rem;
-            border-bottom: 2px solid white;
-        }
+    .button{
+        width: 70%;
     }
 }
 .contentWrapper{
     position: relative;
     z-index: 2;
-    font-size: 1.5rem;
-    padding: 3.5rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 1rem 3.5rem;
+    font-weight: 500;
     max-width: 1200px;
 
     .contentBox{
@@ -61,21 +68,61 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 1rem;
-        background-color: white;
         padding: 3rem;
         text-align: center;
+
+        .sectionTitle{
+            font-family: 'ivypresto-display', serif;
+            margin: 20px 0;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+        }
+
+        .infoBox{
+            .sectionTitle{
+                margin: 0;
+            }
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            max-width: 1200px;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .cardName{
+                    font-family: 'ivypresto-display', serif;
+                    font-size: 2rem;
+                }
+
+                padding: 2.5rem;
+                background-color: rgba(255, 255, 255, .5);
+                border-radius: 2px;
+            }
+
+            .card.desc{
+                grid-column-end: span 3;
+            }
+        }
 
         .speakersBox{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 15px;
-            grid-row-gap: 15px;
+            grid-gap: 20px;
 
             .card {
-                padding: 1.5rem;
-                background-color: rgba(145,220,225,1);
-                border-radius: 1rem;
+                padding: 2.5rem;
+                background-color: rgba(255, 255, 255, .5);
+                border-radius: 2px;
+
+                .cardName{
+                    font-family: 'ivypresto-display', serif;
+                    font-size: 2rem;
+                }
              }
      
             //  .card:last-child{
@@ -113,6 +160,36 @@
             font-weight: 600;
         }
 
+        .planBox{
+            width: 100%;
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, .5);
+
+            .dayHeader{
+                font-family: 'ivypresto-display', serif;
+                font-size: 2rem;
+            }
+
+            .planItemBox{
+                margin: 1.2rem;
+                .planItemTitle{
+                    font-weight: 500;
+                    font-size: 1.8rem;
+
+                    .time{
+                        font-weight: 900;
+                        margin-right: .5rem;
+                    }
+                }
+
+                .planItemDesc{
+                    font-weight: 200;
+                    font-style: italic;
+                }
+                
+            }
+        }
+
     }
 }
 
@@ -123,21 +200,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 1.2em;
-    width: 180px;
-    font-size: 1rem;
+    width: 100%;
+    margin: 50px 3.5rem;
+    font-size: 1.8rem;
     padding: 10px;
-    font-weight: 300;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 2px;
-    border: 2px solid rgba(40,90,125,1);
-    color: rgba(40,90,125,1);
-    background: #fff;
+    border: 2px solid white;
+    color: white;
     transition: all .3s ease-out;
     &:hover{
-        background: rgba(40,90,125,1);
-        color: #fff;
+        background: white;
+        color: rgba(40,90,125,1);
         border: 2px solid #fff;
     }
 }

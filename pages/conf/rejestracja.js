@@ -16,11 +16,11 @@ export default function ConfRegistration() {
       </Head>
       <div className={styles.container}>
             <div className={styles.logoBox}>
-                <Image
-                    fill={true}
-                    src="/logo_conf_white.svg" 
-                    alt="logo konferencji"
-                />
+              <Image
+                  fill={true}
+                  src="/logo_conf_white.svg" 
+                  alt="logo konferencji"
+              />
             </div>
             {isSend ? <Greetings /> : <Form setIsSend={ setIsSend }/>}
       </div>

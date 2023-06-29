@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/conf/Main.module.scss'
+import bg from '../../images/confBG.jpg'
 import clouds from '../../images/clouds.png'
 import SpeakerCard from '../../components/conf/SpeakerCard'
 
@@ -8,14 +9,30 @@ export default function Conf(){
 
     return(
         <div className={styles.container}>
-            <div className={styles.bg}>             
+            <div className={styles.bg}>
                 <Image
                     fill={true}
                     style={{objectFit: "cover"}}
-                    src={clouds}
-                    alt="chmury"
-                    quality={10}
+                    src={bg}
+                    alt="bg"
+                    quality={100}
                 />
+                <div className={styles.bgSlides}>
+                    <Image
+                        fill={true}
+                        style={{objectFit: "cover"}}
+                        src={clouds}
+                        alt="chmury"
+                        quality={10}
+                    />
+                    <Image
+                        fill={true}
+                        style={{objectFit: "cover"}}
+                        src={clouds}
+                        alt="chmury"
+                        quality={10}
+                    />
+                </div>
             </div>
             <div className={styles.hero}>
                 <div className={styles.title}>
@@ -28,21 +45,40 @@ export default function Conf(){
                         alt="logo konferencji"
                     />
                 </div>
-                <div className={styles.placeAndTime}>
-                    <div className={styles.date}>15-16 IX 2023</div>
-                    <div className={styles.line}></div>
-                    <div className={styles.place}>Wrocław</div>
-                </div>
+                <Link href='/conf/rejestracja' className={styles.button}>
+                    Rejestracja
+                </Link>
+                <a href="#content" className={styles.arrow}></a>
             </div>
-            <div className={styles.contentWrapper}>
+            <div id="content" className={styles.contentWrapper}>
                 <div className={styles.contentBox}>
-                    <p>Z ogromną radością zapraszamy na Okręgową Konferencję Przebudzeniową Kierunek Conf, która odbędzie się we Wrocławiu 15-16 września 2023 r. Jesteśmy poruszeni działaniem Ducha Świętego w naszych kościołach, regionie i kraju. Celem konferencji jest wspólne doświadczanie Bożej obecności w uwielbieniu, modlitwie i głoszonym Słowie Bożym.</p> 
-                    
-                    <p>Wizja konferencji zrodziła się w sercu ludzi poruszonych żywą obecnością Ducha Świętego oraz pragnieniem doświadczania Jego darów, dlatego podczas wszystkich spotkań stworzymy przestrzeń, aby Bóg mógł do nas mówić w proroczy sposób. Modląc się o ludzi, będziemy oczekiwać uzdrowienia, uwolnienia, cudów i manifestacji Ducha Świętego.</p>
-                    
-                    <p>Konferencja będzie składać się z trzech głównych spotkań (w piątek wieczór, sobotę rano i sobotę wieczorem) oraz sesji wykładowych o różnej tematyce do wyboru.</p>
-                    
-                    <p>Mówcami konferencji będą:</p>
+                    <div className={styles.infoBox}>
+                        <h2 className={`${styles.sectionTitle} ${styles.dateTitle}`}>Data</h2>
+                        <h2 className={`${styles.sectionTitle} ${styles.placeTitle}`}>Miejsce</h2>
+                        <h2 className={`${styles.sectionTitle} ${styles.priceTitle}`}>Cena</h2>
+                        <div className={styles.card}>
+                            <div><b>15-16 września 2023</b></div>
+                            <div>(piątek - sobota)</div>
+                        </div>
+                        <div className={styles.card}>
+                            <div><b>Wrocław</b></div>
+                            <div>ul. Powstańców Śląskich 199</div>
+                            <div>Budynek kościoła „Antiochia”</div>
+                        </div>
+                        <div className={styles.card}>
+                            <p>Udział w konferencji jest <b>bezpłatny</b></p>
+                            <p>Wyżywienie i noclegi <br/><b>we własnym zakresie</b></p>
+                        </div>
+                        <div className={`${styles.card} ${styles.desc}`}>
+                            <p>
+                                Z ogromną radością zapraszamy na pierwszą Okręgową Konferencję Przebudzeniową Kierunek Conf! Wizja konferencji zrodziła się w sercu ludzi poruszonych żywą obecnością Ducha Świętego oraz pragnieniem doświadczania Jego darów w naszych kościołach, regionie i kraju. 
+                            </p>
+                            <p>
+                                Spotkajmy się, aby doświadczać Bożej obecności w uwielbieniu, modlitwie i głoszonym Słowie Bożym. Chcemy wspólnie oczekiwać na działanie Ducha Świętego. Będziemy modlić się o uzdrowienie i słowo prorocze dla każdego z nas.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class={styles.sectionTitle}>Mówcy</h2>
                     <div className={styles.speakersBox}>
                         <SpeakerCard
                             name="Ryszard i Halina Krzywy"
@@ -50,7 +86,7 @@ export default function Conf(){
                         />
                         <SpeakerCard
                             name="Mirosław i Ewa Szatkowscy"
-                            description="Autorzy książki o trwałości małżeńskiej pt. „Z jakich klocków zbudować ten dom”. Są małżeństwem od 37 lat, mają 5 piątki dzieci i dziewięcioro wnucząt. Przez 25 lat wspólnie prowadzili wspólnotę Kościoła Zielonoświątkowego w Głogowie. Pastor Mirek jest absolwentem KSB Ustroń (obecna BST). Od października 2016 r. powierzono mu funkcję Prezbiter Okręgowego okręgu zachodniego, równocześnie jest człowiek Rady Kościoła."
+                            description="Autorzy książki o trwałości małżeńskiej pt. „Z jakich klocków zbudować ten dom”. Są małżeństwem od 37 lat, mają 5 piątki dzieci i dziewięcioro wnucząt. Przez 25 lat wspólnie prowadzili wspólnotę Kościoła Zielonoświątkowego w Głogowie. Pastor Mirek jest absolwentem Seminarium Teologiczne w Ustroniu. Od października 2016 r. powierzono mu funkcję Prezbiter Okręgowego okręgu zachodniego, równocześnie jest człowiek Rady Kościoła."
                         />
                         {/* <SpeakerCard
                             name="Mariusz i Wioletta Antoszczuk"
@@ -74,11 +110,54 @@ export default function Conf(){
                         />
                     </div>
                     
-                    <p>Ze względu na ograniczoną ilość miejsc, obowiązywać będzie rejestracja. Udział w konferencji jest bezpłatny, a podczas sesji głównych zbierzemy pieniądze, które w całości przeznaczymy na rozwój i pracę trzech kościołów z naszego regionu. Konferencja odbędzie się w kościele Antiocha we Wrocławiu przy ul. Powstańców Śląskich 199.</p>
-                    
-                    <p>Zapraszamy całe rodziny! Podczas głównych spotkań odbędą się specjalne zajęcia dla dzieci w wieku 3-12 lat, natomiast jedna z sesji do wyboru będzie przeznaczona dla młodzieży od 13 roku życia.</p>
-                    
-                    <p>Specjalnie dla Pastorów przygotowaliśmy sesję dodatkową oraz darmowy obiad w sali kościoła Kierunek przy ul. Powstańców Śląskich 159.</p>
+                    <h2 class={styles.sectionTitle}>Plan konferencji</h2>
+                    <div className={styles.planBox}>
+                        <h3 className={styles.dayHeader}>Piątek</h3>
+                        <div className={styles.planItemBox}><div className={styles.planItemTitle}><span className={styles.time}>16:00</span>otwarcie rejestracji</div></div>
+
+                        <div className={styles.planItemBox}>
+                            <div className={styles.planItemTitle}><span className={styles.time}>18:00</span>sesja 1</div>
+                            <div className={styles.planItemDesc}>
+                                <div className={styles.descriptionItem}>Uwielbienie — zespół kościoła Kierunek</div>
+                                <div className={styles.descriptionItem}>Wykład — Ronnie Kołodziejski</div>
+                                <div className={styles.descriptionItem}>Czas modlitwy</div>
+                            </div>
+                        </div>
+
+                        <h3 className={styles.dayHeader}>Sobota</h3>
+                        <div className={styles.planItemBox}>
+                            <div className={styles.planItemTitle}><span className={styles.time}>10:00</span>sesja 2</div>
+                            <div className={styles.planItemDesc}>
+                                <div className={styles.descriptionItem}>Uwielbienie — zespół kościoła Narody</div>
+                                <div className={styles.descriptionItem}>Wykład — Luke Greenwood</div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className={styles.planItemBox}>
+                            <div className={styles.planItemTitle}><span className={styles.time}>12:30 - 13:20</span>warsztaty / tura 1</div>
+                            <div className={styles.planItemTitle}><span className={styles.time}>13:40 - 14:30</span>warsztaty / tura 2</div>
+                            <div className={styles.planItemDesc}>
+                                <div className={styles.descriptionItem}>Warsztaty do wyboru na obu turach:</div>
+                                <div className={styles.descriptionItem}>Sztuka słuchania Boga (warsztat proroczy) — Ryszard Krzywy</div>
+                                <div className={styles.descriptionItem}>Globalna kultura młodzieżowa (warsztat misyjno-młodzieżowy) — Ania Greenwood</div>
+                                <div className={styles.descriptionItem}>Silne małżeństwo (warsztat duszpasterski) — Mirosław i Ewa Szatkowscy</div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className={styles.planItemBox}>
+                            <div className={styles.planItemTitle}><span className={styles.time}>17:00</span>sesja 3</div>
+                            <div className={styles.planItemDesc}>
+                                <div className={styles.descriptionItem}>Uwielbienie — zespół kościoła Kierunek</div>
+                                <div className={styles.descriptionItem}>Wykład — Bartek i Danusia Tomczyńscy</div>
+                                <div className={styles.descriptionItem}>Czas modlitwy</div>
+                            </div>
+                        </div>
+
+                        <div className={styles.planItemBox}><div className={styles.planItemTitle}><span className={styles.time}>19:00</span>zakończenie</div></div>
+                         
+                    </div>
 
                     <Link href='/conf/rejestracja' className={styles.button}>
                         Rejestracja

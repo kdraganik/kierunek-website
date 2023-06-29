@@ -4,7 +4,7 @@ export default function SpeakerCard ({name, description}){
 
   return (
     <div className={styles.card}>
-      <h4 className={styles.name}>{name}</h4>
+      <h3 className={styles.cardName}>{name}</h3>
       <p className={styles.instruction}>{description}</p>
     </div>
   )

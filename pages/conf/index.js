@@ -69,15 +69,18 @@ export default function Conf(){
                         <div className={styles.card}>
                             <div><b>Wrocław</b></div>
                             <div>ul. Powstańców Śląskich 199</div>
-                            <div>Budynek kościoła „Antiochia”</div>
+                            <div>budynek kościoła „Antiochia”</div>
                         </div>
                         <div className={styles.card}>
-                            <p>Udział w konferencji jest <b>bezpłatny</b></p>
-                            <p>Wyżywienie i noclegi <br/><b>we własnym zakresie</b></p>
+                            <p>Udział w konferencji jest <b>bezpłatny</b>.</p>
+                            <p>Wyżywienie i noclegi <br/><b>we własnym zakresie</b>.</p>
                         </div>
                         <div className={`${styles.card} ${styles.desc}`}>
                             <p>
-                                Z ogromną radością zapraszamy na pierwszą Okręgową Konferencję Przebudzeniową Kierunek Conf! Wizja konferencji zrodziła się w sercu ludzi poruszonych żywą obecnością Ducha Świętego oraz pragnieniem doświadczania Jego darów w naszych kościołach, regionie i kraju. 
+                                Z ogromną radością zapraszamy na pierwszą Okręgową Konferencję Przebudzeniową Kierunek Conf! 
+                            </p>
+                            <p> 
+                                Wizja konferencji zrodziła się w sercu ludzi poruszonych żywą obecnością Ducha Świętego oraz pragnieniem doświadczania Jego darów w naszych kościołach, regionie i kraju. 
                             </p>
                             <p>
                                 Spotkajmy się, aby doświadczać Bożej obecności w uwielbieniu, modlitwie i głoszonym Słowie Bożym. Chcemy wspólnie oczekiwać na działanie Ducha Świętego. Będziemy modlić się o uzdrowienie i słowo prorocze dla każdego z nas.
@@ -88,12 +91,12 @@ export default function Conf(){
                     <div className={styles.speakersBox}>
                         <SpeakerCard
                             name="Ryszard i Halina Krzywy"
-                            description="Zaangażowani są w działalność proroczą. Są rodzicami trójki dzieci. Obecnie są członkami Kościoła Zielonoświątkowego w Nysie. Ryszard ukończył Wydział Medycyny Weterynaryjnej na Akademii Rolniczej we Wrocławiu oraz Zaoczne Seminarium Teologiczne w Ustroniu. Przez cztery lata pełnił funkcję pastora w zborze ZKE w Łambinowicach, a następnie w Prudniku w Kościele Zielonoświątkowym. Od 1996 r. roku w służbie proroczej – usługuje w wielu kościołach w kraju i za granicą, a od 2010 r. co roku prowadzi obóz proroczy."
+                            description="Zaangażowani są w działalność proroczą. Mają trójkę dzieci. Obecnie są członkami Kościoła Zielonoświątkowego w Nysie. Ryszard ukończył Wydział Medycyny Weterynaryjnej na Akademii Rolniczej we Wrocławiu oraz Zaoczne Seminarium Teologiczne w Ustroniu. Przez cztery lata pełnił funkcję pastora w zborze ZKE w Łambinowicach, a następnie w Prudniku w Kościele Zielonoświątkowym. Od 1996 r. wspólnie usługują w służbie proroczej w wielu kościołach w kraju i za granicą, a od kilkunastu lat organizują i prowadzą obozy prorocze."
                             img={Ryszard}
                         />
                         <SpeakerCard
                             name="Mirosław i Ewa Szatkowscy"
-                            description="Autorzy książki o trwałości małżeńskiej pt. „Z jakich klocków zbudować ten dom”. Są małżeństwem od 37 lat, mają 5 piątki dzieci i dziewięcioro wnucząt. Przez 25 lat wspólnie prowadzili wspólnotę Kościoła Zielonoświątkowego w Głogowie. Pastor Mirek jest absolwentem Seminarium Teologiczne w Ustroniu. Od października 2016 r. powierzono mu funkcję Prezbiter Okręgowego okręgu zachodniego, równocześnie jest człowiek Rady Kościoła."
+                            description="Autorzy książki o trwałości małżeńskiej pt. „Z jakich klocków zbudować ten dom”. Są małżeństwem od 37 lat, mają pięcioro dzieci i dziewięcioro wnucząt. Przez 25 lat wspólnie prowadzili wspólnotę Kościoła Zielonoświątkowego w Głogowie. Pastor Mirek jest absolwentem Seminarium Teologicznego w Ustroniu. Od października 2016 r. pełni funkcję Prezbitera Okręgowego okręgu zachodniego, równocześnie jest członkiem Rady Kościoła Zielonoświątkowego w Polsce."
                             img={Mirek}
                         />
                         {/* <SpeakerCard
@@ -102,12 +105,12 @@ export default function Conf(){
                         /> */}
                         <SpeakerCard
                             name="Bartek i Danusia Tomczyńscy"
-                            description="Pełni pasji dla Boga Pastorzy Kościoła Kierunek. Są rodzicami czwórki dzieci. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, a także pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet. Oboje przemawiają też na różnych konferencjach i szkoleniach."
+                            description="Pełni pasji dla Boga Pastorzy Kościoła Kierunek. Są rodzicami czwórki dzieci. Bartek jest dyrektorem programowym Szkoły Biblijnego Uczniostwa, mówcą motywacyjnym, wykładowcą oraz działaczem społecznym. Danusia jest nauczycielką języka angielskiego, pedagogiem specjalnym, a także pracuje w Stowarzyszeniu Wrocławskie Forum Kobiet. Oboje przemawiają na różnych konferencjach i szkoleniach."
                             img={Bartek}
                         />
                         <SpeakerCard
                             name="Luke i Ania Greenwood "
-                            description="Ewangeliści, mówcy i artyści. Razem są wykładowcami Szkoły Misyjnej Stegiera, gdzie aktywnie angażują się w szkolenie zespołów misyjnych. Razem z dwójką dzieci mieszkają we Wrocławiu, gdzie zaangażowani są w pracę Kościoła Kierunek. Lukę jest dyrektorem organizacji Steiger Europe. Napisał też książkę „Global Youth Culture”. Ania założyła Fundację Steiger Polska. Jest misjonarką Steigera od 2006 r."
+                            description="Ewangeliści, mówcy i artyści. Razem z dwójką dzieci mieszkają we Wrocławiu, gdzie zaangażowani są w pracę Kościoła Kierunek. Luke jest dyrektorem organizacji misyjnej Steiger Europe. Napisał też książkę „Global Youth Culture”. Ania jest misjonarką Steigera od 2006 r. Założyła Fundację Steiger Polska, która dociera z ewangelią do młodego pokolenia w naszym kraju. Razem są wykładowcami Szkoły Misyjnej Stegiera, gdzie aktywnie angażują się w szkolenie zespołów misyjnych."
                             img={Luke}
                         />
                         <SpeakerCard
@@ -142,6 +145,7 @@ export default function Conf(){
                             <div className={styles.planItemDesc}>
                                 <div className={styles.descriptionItem}>Uwielbienie — zespół kościoła Narody</div>
                                 <div className={styles.descriptionItem}>Wykład — Luke Greenwood</div>
+                                <div className={styles.descriptionItem}>Czas modlitwy</div>
                             </div>
                         </div>
                         

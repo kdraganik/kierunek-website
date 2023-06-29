@@ -120,7 +120,7 @@ export default function Conf(){
                         />
                         <SpeakerCard
                             name="Ronnie Kołodziejski"
-                            description="Pastor w Społeczności Chrześcijańskiej we Wrocławiu. W wieku 12 lat razem z rodzicami wyjechał na stałe do Kanady, gdzie oddał swoje życie Bogu, założył rodzinę i został pastorem. W 2021 roku razem z żoną Sarą i dwójką dzieci, na stałe wrócił do Polski. Zajmuje się pracą misyjną, głosił ewangelię na 6 kontynentach w około 50 krajach."
+                            description="Pastor, kaznodzieja i misjonarz. W wieku 12 lat razem z rodzicami wyjechał na stałe z Polski do Kanady. Tam oddał swoje życie Bogu, założył rodzinę i został pastorem polonijnego kościoła w Calgary. W 2021 roku razem z żoną Sarą i dwójką dzieci na stałe wrócił do Polski, gdzie został pastorem pomocniczym w Społeczności Chrześcijańskiej we Wrocławiu. Zajmuje się pracą misyjną, regularnie wyjeżdża w najdalsze zakątki świata, by dzielić się ewangelią. Odwiedził już około 50 krajów na 6 kontynentach."
                             img={Ronnie}
                         />
                     </div>

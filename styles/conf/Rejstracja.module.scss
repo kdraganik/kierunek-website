@@ -59,6 +59,8 @@
     outline: none;
     border-bottom: 1px solid #fff;
     border-radius: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     
     &:focus{
       border-bottom: 2px solid #fff;

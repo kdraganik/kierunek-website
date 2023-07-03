@@ -26,12 +26,12 @@ export default function Form ({ setIsSend }){
   const customStyles = {
     option: (defaultStyles, state) => ({
       ...defaultStyles,
-      fontSize: "1.2em",
+      fontSize: "1.4em",
       color: state.isSelected ? "white" : "rgba(40,90,125,1)",
       backgroundColor: state.isSelected ?  "rgba(40,90,125,1)" : "white",
       "&:hover": {
         ...defaultStyles,
-        fontSize: "1.2em",
+        fontSize: "1.4em",
         color: state.isSelected ? "white" : "rgba(40,90,125,1)",
         backgroundColor: state.isSelected ?  "rgba(40,90,125,.8)" : "rgba(40,90,125,.2)",
       }
@@ -114,9 +114,9 @@ export default function Form ({ setIsSend }){
         <label htmlFor="email" className={styles.label}>Email</label>
         <input required type="email" className={styles.textInput} id="email" value={email} onChange={e => setEmail(e.target.value)}/>
         <label htmlFor="day" className={styles.label}>W jakie dni planujesz być na konferencji?</label>
-        <Select id="day" className={styles.select} options={options1} styles={customStyles} defaultValue={options1[0]} isClearable={false} isSearchable={false} components={{ IndicatorSeparator: () => null }} onChange={option => setDay(option.value)}/>
+        <Select id="day" name="day" required className={styles.select} options={options1} styles={customStyles} isClearable={false} isSearchable={false} components={{ IndicatorSeparator: () => null }} onChange={option => setDay(option.value)} placeholder="Wybierz opcję"/>
         <label htmlFor="pastor" className={styles.label}>Czy jesteś pastorem / żoną pastora?</label>
-        <Select id="day" className={styles.select} options={options2} styles={customStyles} defaultValue={options2[0]} isClearable={false} isSearchable={false} components={{ IndicatorSeparator: () => null }} onChange={option => setPastor(option.value)}/>
+        <Select id="pastor" name="pastor" required className={styles.select} options={options2} styles={customStyles} isClearable={false} isSearchable={false} components={{ IndicatorSeparator: () => null }} onChange={option => setPastor(option.value)} placeholder="Wybierz opcję"/>
         {status == 'ERR' ? <div className={styles.error}>Wystąpił błąd, spróbuj ponownie</div> : ""}
         {isLoading ? <div className={styles.loader}><div></div><div></div><div></div><div></div></div> : <input type="submit" className={styles.submit} value="Zapisz" />}
       </form>

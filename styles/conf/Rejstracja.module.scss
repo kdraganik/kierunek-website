@@ -34,8 +34,12 @@
 
 /* Form */
 .wrapper{
-    width: 300px;
+    width: 340px;
     z-index: 1;
+
+    @media (max-width: 768px){
+      width: 280px;
+  }
   }
   .formContainer{
     width: 100%;
@@ -50,10 +54,11 @@
     padding: 1px;
     border: none;
     background: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: 'ivypresto-display', serif;
     outline: none;
     border-bottom: 1px solid #fff;
+    border-radius: none;
     
     &:focus{
       border-bottom: 2px solid #fff;
@@ -70,7 +75,7 @@
     display: block;
     margin: .6em 0 .2em 0;
     font-weight: 300;
-    font-size: .9em;
+    font-size: 1.1em;
   }
 
   .select{

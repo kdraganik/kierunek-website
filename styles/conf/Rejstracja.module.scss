@@ -2,30 +2,40 @@
 
 /* Main */
 .container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'ivypresto-display', serif;
-    background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%);
-  }
-  .header1{
-    color: #fff;
-    margin: -25px 0 15px 0;
-  }
-
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'ivypresto-display', serif;
+  background: linear-gradient(90deg, rgba(40,90,125,1) 0%, rgba(145,220,225,1) 100%);
+}
+.bg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: .6;
+}
+.bgSlide img{
+  display: inline-block;
+}
+.header1{
+  color: #fff;
+  margin: -25px 0 15px 0;
+}
 .logoBox{
     position: relative;
-    width: 20%;
-    height: 30%;
-    margin-bottom: 10px;
+    width: 30%;
+    height: 15%;
+    margin-bottom: 3em;
 }
 
 /* Form */
 .wrapper{
-    width: 266px;
+    width: 300px;
+    z-index: 1;
   }
   .formContainer{
     width: 100%;
@@ -40,7 +50,8 @@
     padding: 1px;
     border: none;
     background: none;
-    font-size: 1.8em;
+    font-size: 1.2em;
+    font-family: 'ivypresto-display', serif;
     outline: none;
     border-bottom: 1px solid #fff;
     
@@ -57,10 +68,14 @@
   .label{
     color: #fff;
     display: block;
-    margin: .3em 0;
+    margin: .6em 0 .2em 0;
     font-weight: 300;
     font-size: .9em;
-    text-transform: uppercase;
+  }
+
+  .select{
+    width: 100%;
+    color: white;
   }
   
   .error{
@@ -156,7 +171,13 @@
     justify-content: center;
     align-items: center;
 }
+.header{
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+}
 .instruction{
     text-align: center;
     color: #fff;
+    font-size: 1.4rem;
 }

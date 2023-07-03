@@ -9,7 +9,9 @@ export default async function handler(req, res){
                 "fields": {
                     "Imię": data.forename,
                     "Nazwisko": data.surname,
-                    "Email": data.email
+                    "Email": data.email,
+                    "Dni": data.day,
+                    "Pastor": data.pastor == 1 ? true : false
                 }
             }
         ]

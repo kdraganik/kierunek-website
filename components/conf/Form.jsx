@@ -13,7 +13,7 @@ export default function Form ({ setIsSend }){
   const [pastor, setPastor] = useState(0)
 
   const options1 = [
-    { value: "Pt + Sob", label: "Cała konferncja — piątek i sobota" },
+    { value: "Pt + Sob", label: "Cała konferencja — piątek i sobota" },
     { value: "Pt", label: "Tylko piątek" },
     { value: "Sob", label: "Tylko sobota" }
   ]

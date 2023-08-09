@@ -14,7 +14,7 @@ export default function ConfRegistration() {
   return (
     <>
       <Head>
-        <title>Rejestracja</title>
+        <title>Rejestracja na zajęcia dla dzieci</title>
       </Head>
       <div className={styles.container}>
         <div className={styles.bg}>

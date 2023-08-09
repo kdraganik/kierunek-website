@@ -24,6 +24,7 @@
 .header1{
   color: #fff;
   margin: -25px 0 15px 0;
+  text-align: center;
 }
 .logoBox{
     position: relative;
@@ -182,9 +183,35 @@
   text-align: center;
   color: #fff;
   font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 .instruction{
     text-align: center;
     color: #fff;
     font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.registryButton{
+  text-decoration: none;
+  font-family: 'ivypresto-display', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 50px 3.5rem;
+  font-size: 1.8rem;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid white;
+  color: white;
+  transition: all .3s ease-out;
+  &:hover{
+      background: white;
+      color: rgba(40,90,125,1);
+      border: 2px solid #fff;
+  }
 }

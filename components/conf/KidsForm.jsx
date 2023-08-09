@@ -43,7 +43,7 @@ export default function Form ({ setIsSend }){
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.header1}>Rejestracja dzieci</h1>
+      <h1 className={styles.header1}>Rejestracja na zajęcia dla dzieci</h1>
       <form className={styles.formContainer} onSubmit={ handleSubmit }>
         <label htmlFor="dziecko" className={styles.label}>Imię i nazwisko dziecka</label>
         <input autoFocus required type="text" className={styles.textInput} id="dziecko" value={kid} onChange={e => setKid(e.target.value)}/>

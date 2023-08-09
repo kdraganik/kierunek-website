@@ -117,6 +117,18 @@ export default function Conf(){
                             img={Ronnie}
                         />
                     </div>
+                    <h2 class={styles.sectionTitle}>Zajęcia dla dzieci</h2>
+                    <div className={styles.infoBox}>
+                        <div className={`${styles.card} ${styles.desc}`}>
+                            <p>
+                                Zapraszamy całe rodziny! Podczas głównych spotkań odbędą się specjalne zajęcia dla dzieci w wieku 3-13 lat, a jedna z sesji do wyboru będzie przeznaczona dla młodzieży od 13 roku zycia. Na zajęcia obowiązuje dodatkowa rejstracja, która pomoże nam przygotować odpowiednią ilość materiałów.
+                            </p>
+                        </div>
+                    </div>
+
+                    <Link href='/conf/kids' className={styles.button}>
+                        Rejestracja na zajęcia dla dzieci
+                    </Link>
                     
                     <h2 class={styles.sectionTitle}>Plan konferencji</h2>
                     <div className={styles.planBox}>

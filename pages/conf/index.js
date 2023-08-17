@@ -161,7 +161,7 @@ export default function Conf(){
                             <div className={styles.planItemDesc}>
                                 <div className={styles.descriptionItem}>Warsztaty do wyboru na obu turach:</div>
                                 <div className={styles.descriptionItem}>Sztuka słuchania Boga (warsztat proroczy) — Ryszard Krzywy</div>
-                                <div className={styles.descriptionItem}>Globalna kultura młodzieżowa (warsztat misyjno-młodzieżowy) — Ania Greenwood</div>
+                                <div className={styles.descriptionItem}>Jak głosić Ewangelię w dzisiejszych czasach? (warsztat misyjno-ewangelizacyjny) — Ania Greenwood</div>
                                 <div className={styles.descriptionItem}>Silne małżeństwo (warsztat duszpasterski) — Mirosław i Ewa Szatkowscy</div>
                                 <div className={styles.descriptionItem}>Kolejny krok (warsztaty rozwojowe dla pastorów ) — Ania Nieżurawska</div>
                             </div>

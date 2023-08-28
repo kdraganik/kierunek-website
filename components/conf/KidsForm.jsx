@@ -6,7 +6,7 @@ export default function Form ({ setIsSend }){
   const [isLoading, setIsLoading] = useState(false)
   const [status, setStatus] = useState('');
   const [kid, setKid] = useState("")
-  const [birthday, setBirthday] = useState("")
+  const [birthday, setBirthday] = useState("2020-09-14")
   const [parent, setParent] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
@@ -22,7 +22,6 @@ export default function Form ({ setIsSend }){
       email,
       phone
     }
-    console.log(data)
     fetch("/api/conf-rejstracja-kids", {
       method: "POST",
       body: JSON.stringify(data)
@@ -48,7 +47,7 @@ export default function Form ({ setIsSend }){
         <label htmlFor="dziecko" className={styles.label}>Imię i nazwisko dziecka</label>
         <input autoFocus required type="text" className={styles.textInput} id="dziecko" value={kid} onChange={e => setKid(e.target.value)}/>
         <label htmlFor="birthday" className={styles.label}>Data urodzenia</label>
-        <input required type="date" className={styles.textInput} id="birthday" value={birthday} onChange={e => setBirthday(e.target.value)}/>
+        <input required type="date" max="2020-09-14" className={styles.textInput} id="birthday" value={birthday} onChange={e => setBirthday(e.target.value)}/>
         <label htmlFor="rodzic" className={styles.label}>Imię i nazwisko rodzica</label>
         <input required type="text" className={styles.textInput} id="rodzic" value={parent} onChange={e => setParent(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>

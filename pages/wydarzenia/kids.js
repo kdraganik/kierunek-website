@@ -22,7 +22,7 @@ export default function KidsEvent() {
             objectFit="contain"
             src="/logo_kids.svg" alt="logo_kids"/>
         </div>
-        <h1 className={styles.header1}>Wydarzenie wielkanocne</h1>
+        <h1 className={styles.header1}>Urodziny Jezusa</h1>
         {isSend ? <Greetings /> : <Form setIsSend={ setIsSend }/>}
       </div>
     </>

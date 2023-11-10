@@ -8,6 +8,7 @@ export default async function handler(req, res){
             {
                 "fields": {
                     "Imię i nazwisko dziecka": data.kidName,
+                    "Data urodzenia": data.birthday,
                     "Imię i nazwisko rodzica": data.parentName,
                     "Numer telefonu": data.phone,
                     "Email": data.email

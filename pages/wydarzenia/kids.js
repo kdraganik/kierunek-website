@@ -12,7 +12,7 @@ export default function KidsEvent() {
   return (
     <>
       <Head>
-        <title>Wydarzenie wielkanocne</title>
+        <title>Urodziny Jezusa</title>
       </Head>
       <div className={styles.container}>
         <div className={styles.imageBox}>

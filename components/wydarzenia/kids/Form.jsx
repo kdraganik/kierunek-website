@@ -45,8 +45,8 @@ export default function Form ({ setIsSend }){
       <form className={styles.formContainer} onSubmit={ handleSubmit }>
         <label htmlFor="dziecko" className={styles.label}>Imię i nazwisko dziecka</label>
         <input autoFocus required type="text" className={styles.textInput} id="dziecko" value={kidName} onChange={e => setKidName(e.target.value)}/>
-        <label htmlFor="birthday" className={styles.label}>Data urodzenia</label>
-        <input required type="date" max="2020-12-09" className={styles.textInput} id="birthday" value={birthday} onChange={e => setBirthday(e.target.value)}/>
+        <label htmlFor="birthday" className={styles.label}>Data urodzenia dziecka</label>
+        <input required type="date" max="2021-03-03" className={styles.textInput} id="birthday" value={birthday} onChange={e => setBirthday(e.target.value)}/>
         <label htmlFor="rodzic" className={styles.label}>Imię i nazwisko rodzica</label>
         <input required type="text" className={styles.textInput} id="rodzic" value={parentName} onChange={e => setParentName(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>

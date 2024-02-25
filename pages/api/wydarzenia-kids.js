@@ -1,10 +1,14 @@
+import Airtable from "airtable";
+
 export default async function handler(req, res){
     const apiKey = process.env.AIRTABLE_API_KEY;
 
     const data = JSON.parse(req.body)
 
-    const bodyData = {
-        "records": [
+    try{
+        const Airtable = require('airtable');
+        const base = new Airtable({apiKey: apiKey}).base('apputXSHleOOtyyK9')
+        base('Kids').create([
             {
                 "fields": {
                     "Imię i nazwisko dziecka": data.kidName,
@@ -14,26 +18,16 @@ export default async function handler(req, res){
                     "Email": data.email
                 }
             }
-        ]
-    }
-
-    try{
-        const response = await fetch("https://api.airtable.com/v0/apputXSHleOOtyyK9/Kids", {
-            method: 'POST',
-            headers: {
-                "Authorization": "Bearer " + apiKey,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(bodyData)
-        })
-        if(response.ok){
-            res.status(200).json({message: "ok"})
-        }
-        else{
-            const data = await response.json()
-            console.log(data)
-            res.status(502).json({message: "Error while saving data to AirTables"})
-        }
+        ], function(err, records) {
+            if (err) {
+                console.error(err);
+                res.status(502).json({message: "Error while saving data to AirTables"})
+            }
+            records.forEach(function (record) {
+                console.log(record.getId());
+                res.status(200).json({message: "ok"})
+            });
+        });
     }
     catch(err){
         console.log(err)

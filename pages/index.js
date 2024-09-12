@@ -119,7 +119,8 @@ export default function Home() {
                 <div className={styles.header}>Odnajdź nas</div>
                 <div className={styles.dateAndPlace}>
                   <span>Każda niedziela</span>
-                  <span>10:00 i 12:12</span>
+                  <span>10:00 — nabożeństwo z zajęciami Kierunek Kids</span>
+                  <span>12:12 — nabożeństwo z tłumaczeniem na j. angielski i j. portugalski</span>
                   <span>ul. Powstańców Śląskich 159 - lokal na 1 piętrze</span>
                 </div>
               </div>

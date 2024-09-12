@@ -2,6 +2,7 @@ import Layout from '../components/global/Layout.jsx'
 import Image from 'next/image'
 import styles from '../styles/Kids.module.scss'
 import kidsBg from '../images/kidsBg.jpg'
+import Link from 'next/link.js'
 
 export default function Kids() {
   return (
@@ -42,6 +43,9 @@ export default function Kids() {
             </p>
             <p className={styles.description}>
               Wierzymy, że inwestycja w młode pokolenie przyniesie owoce w ich dorosłym życiu oraz wzmocni poczucie, że z Bogiem mogą osiągnąć niezwykłe rzeczy.
+            </p>
+            <p className={styles.description}>
+              Chcemy zapewnić najlepsze warunki dla najmłodszych członków kościoła przestrzegając naszej <Link href={"/polityka_ochrony.pdf"}>polityki ochrony dzieci</Link>.
             </p>
           </div>
         </div>

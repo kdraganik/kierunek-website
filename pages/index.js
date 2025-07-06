@@ -37,7 +37,7 @@ export default function Home() {
               }}
             />
           </div>
-          <div className={styles.sideLeftBottom}>Każda niedziela 10:00 i 12:12</div>
+          <div className={styles.sideLeftBottom}>Każda niedziela 11:00</div>
           <div className={styles.sideRightBottom}>Powstańców Śląskich 159, Wrocław</div>
         </div>
         <div className={`${styles.section} ${styles.credo}`}>
@@ -118,9 +118,7 @@ export default function Home() {
                 <div className={styles.name}>kontakt</div>
                 <div className={styles.header}>Odnajdź nas</div>
                 <div className={styles.dateAndPlace}>
-                  <span>Każda niedziela</span>
-                  <span>10:00 — nabożeństwo z zajęciami Kierunek Kids</span>
-                  <span>12:12 — nabożeństwo z tłumaczeniem na j. angielski i j. portugalski</span>
+                  <span>Każda niedziela 11:00</span>
                   <span>ul. Powstańców Śląskich 159 - lokal na 1 piętrze</span>
                 </div>
               </div>

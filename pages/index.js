@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.scss'
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Link from 'next/link';
-import heroBg from '../images/heroBg.jpg'
+import SimpleImageSlider from 'react-simple-image-slider'
 import endBg from '../images/endBg.jpg'
 import { useState, useEffect } from 'react'
 

@@ -16,7 +16,7 @@ export default function Home({images}) {
   const [height, setHeight] = useState(0)
 
   const handleWindowResize = () => {
-    let tempWidth = window.innerWidth * 0.8;
+    let tempWidth = window.innerWidth * 0.6;
     let tempHeight = 9 / 16 * tempWidth;
     if( tempHeight > 0.7 * window.innerHeight){
       tempHeight = 0.7 * window.innerHeight

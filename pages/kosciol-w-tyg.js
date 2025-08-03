@@ -74,20 +74,43 @@ export default function Week({groups, images}) {
 
 export async function getServerSideProps() {
   const apiKey = process.env.AIRTABLE_API_KEY;
-  const responseGroups = await fetch("https://api.airtable.com/v0/appUYxhvagqok4gaI/Lista?sort%5B0%5D%5Bfield%5D=order", {
-    headers: {
-      Authorization: "Bearer " + apiKey
+  
+  let groups = [];
+  let images = [];
+
+  try {
+    const responseGroups = await fetch("https://api.airtable.com/v0/appUYxhvagqok4gaI/Lista?sort%5B0%5D%5Bfield%5D=order", {
+      headers: {
+        Authorization: "Bearer " + apiKey
+      }
+    })
+    
+    if (responseGroups.ok) {
+      const groupsData = await responseGroups.json()
+      groups = groupsData.records || [];
     }
-  })
-  const groupsData = await responseGroups.json()
-  const groups = groupsData.records
-  const responseImages = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?view=Grid%20view", {
-    headers: {
-      Authorization: "Bearer " + apiKey
+  } catch (error) {
+    console.error('Error fetching groups:', error);
+  }
+
+  try {
+    const responseImages = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?view=Grid%20view", {
+      headers: {
+        Authorization: "Bearer " + apiKey
+      }
+    })
+    
+    if (responseImages.ok) {
+      const imagesData = await responseImages.json()
+      if (imagesData.records && Array.isArray(imagesData.records)) {
+        images = imagesData.records
+          .filter(ele => ele.fields && ele.fields.slide && ele.fields.slide[0])
+          .map(ele => { return {url: ele.fields.slide[0].url} })
+      }
     }
-  })
-  const imagesData = await responseImages.json()
-  const images = await imagesData.records.map(ele => { return {url: ele.fields.slide[0].url} })
+  } catch (error) {
+    console.error('Error fetching images:', error);
+  }
 
   return {
     props: {

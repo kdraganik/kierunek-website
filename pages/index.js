@@ -9,22 +9,50 @@ import Image from 'next/image';
 import Link from 'next/link';
 import heroBg from '../images/heroBg.jpg'
 import endBg from '../images/endBg.jpg'
+import { useState, useEffect } from 'react'
 
-export default function Home() {
+export default function Home({images}) {
+  const [width, setWidth] = useState(0)
+  const [height, setHeight] = useState(0)
+
+  const handleWindowResize = () => {
+    let tempWidth = window.innerWidth * 0.8;
+    let tempHeight = 9 / 16 * tempWidth;
+    if( tempHeight > 0.7 * window.innerHeight){
+      tempHeight = 0.7 * window.innerHeight
+      tempWidth = 16 / 9 * tempHeight
+    }
+    setWidth(tempWidth)
+    setHeight(tempHeight)
+  }
+
+  useEffect(() => {
+    handleWindowResize();
+    window.addEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, []);
+
   return (
     <Layout>
       <div className={styles.wrapper}>
         <div className={`${styles.section} ${styles.startBanner}`}>
-          <div className={styles.bg}>
-            <Image
-              src={heroBg}
-              alt="hero background"
-              fill={true}
-              style={{objectFit: "cover"}}
-              quality={80}
-            />
+          <div className={styles.sliderBox}>
+            { 
+              images.length > 0
+              ?
+              <SimpleImageSlider
+                width={width}
+                height={height}
+                images={images}
+                showBullets={true}
+                showNavs={true}
+                autoPlay={true}
+                autoPlayDelay={5.0}
+              />
+              :
+              ""
+            }
           </div>
-          <div className={styles.overlay}></div>
           <div className={styles.center}>
             <h1>Kochamy </h1>
             <Typewriter
@@ -158,4 +186,34 @@ export default function Home() {
       </div>
     </Layout>
   )
+}
+
+export async function getServerSideProps() {
+  const apiKey = process.env.AIRTABLE_API_KEY;
+  let images = [];
+
+  try {
+    const responseImages = await fetch("https://api.airtable.com/v0/appmg4ln5REExPoSi/Lista?view=Grid%20view", {
+      headers: {
+        Authorization: "Bearer " + apiKey
+      }
+    })
+    
+    if (responseImages.ok) {
+      const imagesData = await responseImages.json()
+      if (imagesData.records && Array.isArray(imagesData.records)) {
+        images = imagesData.records
+          .filter(ele => ele.fields && ele.fields.slide && ele.fields.slide[0])
+          .map(ele => { return {url: ele.fields.slide[0].url} })
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching images:', error);
+  }
+
+  return {
+    props: {
+      images
+    }
+  };
 }

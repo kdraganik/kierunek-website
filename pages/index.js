@@ -66,7 +66,7 @@ export default function Home({images}) {
             />
           </div>
           <div className={styles.sideLeftBottom}>Każda niedziela 11:00</div>
-          <div className={styles.sideRightBottom}>Powstańców Śląskich 159, Wrocław</div>
+          <div className={styles.sideRightBottom}>Zakrzowska 29, Wrocław</div>
         </div>
         <div className={`${styles.section} ${styles.credo}`}>
           <p>Wierzymy, że <span>miłość</span> polega na dawaniu tego co najlepsze. Robimy wszystko z pasją, dbając o jak najwyższą <span>jakość</span>.</p>
@@ -147,12 +147,12 @@ export default function Home({images}) {
                 <div className={styles.header}>Odnajdź nas</div>
                 <div className={styles.dateAndPlace}>
                   <span>Każda niedziela 11:00</span>
-                  <span>ul. Powstańców Śląskich 159 - lokal na 1 piętrze</span>
+                  <span>ul. Zakrzowska 29</span>
                 </div>
               </div>
               <Button text="dojazd" link="https://goo.gl/maps/8kxWoqhoaG9Zgyx4A"/>
             </div>
-            <Map url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1568.2246868254629!2d17.01116804976333!3d51.0850864552755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dd3e0c057362d0e!2zS2_Fm2Npw7PFgiBLaWVydW5law!5e0!3m2!1sen!2spl!4v1648722200266!5m2!1sen!2spl"/>
+            <Map url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.6466765241703!2d17.114477577280493!3d51.15186633661314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe88d4bafaa29%3A0xb853e4a2c8d7ee31!2sZakrzowska%2029%2C%2051-318%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1757519560578!5m2!1spl!2spl"/>
           </div>
           <div className={styles.bottom}>
             <Form />
